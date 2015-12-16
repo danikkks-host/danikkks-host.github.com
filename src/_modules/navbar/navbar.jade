@@ -1,0 +1,43 @@
+mixin navbar(config)
+  - var _config = config || {}
+
+  //navbar begin
+  .navbar-block
+    .top-block
+      .container
+        .row
+          .social-icons.col-md-12
+            .icon.icon-vk
+              p B
+            .icon.icon-facebook
+              img.logo(src="images/common/facebook.svg", width="10px")
+            .icon.icon-google
+              img.logo(src="images/common/googlePlus.svg", width="10px")
+            .icon.icon-linkedin
+              img.logo(src="images/common/linkedIn.svg", width="10px")
+
+          .language.col-md-12
+            .ukr УКР
+            .rus.margin-fix.selected РУС
+            .eng.margin-fix ENG
+
+    .bottom-block
+      .container
+        .row
+          .six.columns
+            .company-logo
+          .six.columns
+            .request-call
+              p.tel +38 (044) 490-77-70
+              p.link Замовити зворотнiй дзвінок
+    .menu-block
+      .container
+        .row
+          ul.twelve.columns
+            li Продукти
+            li.underline.selected Можливості 100 +
+            li Ціни
+            li Клієнти
+            li Підтримка
+            li Компанія
+  //navbar end

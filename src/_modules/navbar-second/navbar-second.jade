@@ -1,0 +1,165 @@
+mixin navbar-second(config)
+  - var _config = config || {}
+
+
+  // ========[NAVBAR BEGIN]========
+  .navbar-second
+
+    //top navbar block
+    .navbar-second__top-block.visible-md.visible-lg
+      .container
+        .row
+          .col-md-6
+            a(href="/").logo.logo_navbar
+          .col-md-8.col-md-offset-5
+            .telephone.telephone_navbar +38 (044) 490-77-70
+              span.telephone__slash |
+              a(href="#") Увійти
+          .col-md-5.visible-md.visible-lg
+            .languages.languages_navbar
+              a.languages__language(href="#") УКР
+              a.languages__language(href="#") РУС
+              a.languages__language(href="#") ENG
+
+    //bottom navbar block
+    .navbar-second__bottom-block
+      .container-fluid
+        .row
+          .col-md-24
+            ul.navbar-links.navbar-links_navbar-float.visible-md.visible-lg
+              li.navbar-links__button
+                a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Продукти
+                ul.dropdown
+                  li
+                    a.dropdown__link(href='/sale.html') Продаж та впровадження
+                  li
+                    a.dropdown__link(href='/cloud.html') Хмарний Контакт-центр
+                  li
+                    a.dropdown__link(href='/key.html') Контакт-центр під ключ
+              li.navbar-links__button
+                a.navbar-links__link.navbar-links__link_navbar-mobile.navbar-links__link_selected-navbar-float(href="#") Можливості 100 +
+                ul.dropdown
+                  li
+                    a.dropdown__link(href='/functionality.html') Опис функціоналу
+                  li
+                    a.dropdown__link(href='#') API
+                  li
+                    a.dropdown__link(href='/telemarketing.html') Телемаркетинги
+                  li
+                    a.dropdown__link(href='/faq.html') FAQ
+              li.navbar-links__button
+                a.navbar-links__link.navbar-links__link_navbar-mobile(href="/prices.html") Ціни
+              li.navbar-links__button
+                a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Клієнти
+                ul.dropdown
+                  li
+                    a.dropdown__link(href='/features.html') Банки
+                  //- li
+                  //-   a.dropdown__link(href='#') Інтернет-провайдери
+                  //- li
+                  //-   a.dropdown__link(href='#') Провайдери телебачення
+                  li
+                    a.dropdown__link(href='/online-store.html') Інтернет-магазини
+                  li
+                    a.dropdown__link(href='/support-service.html') Служби підтримки
+                  li
+                    a.dropdown__link(href='/outsourcing-cc.html') Аутсорсингові контакт-центри
+              li.navbar-links__button
+                a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Підтримка
+                ul.dropdown
+                  li
+                    a.dropdown__link(href='/support.html') Технічна підтримка
+                  li
+                    a.dropdown__link(href='/education.html') Навчання
+              li.navbar-links__button
+                a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Компанія
+                ul.dropdown.dropdown_full-width
+                  li
+                    a.dropdown__link(href='/about-us.html') Про нас
+                  li
+                    a.dropdown__link(href='#') Блог
+                  li
+                    a.dropdown__link(href='/contacts.html') Контакти
+
+            .navbar-mobile.hidden-md.hidden-lg.cf
+              a(href="/").logo.logo_navbar
+              .mobile-menu-button Меню
+  // ---------[NAVBAR END]---------
+
+
+
+
+  // ========[MOBILE MENU BEGIN]========
+  .mobile-menu.mobile-menu_hidden.hidden-md.hidden-lg.cf
+    .languages.languages_mobile-menu
+      a.languages__language(href="#") УКР
+      a.languages__language(href="#") РУС
+      a.languages__language(href="#") ENG
+    .navbar-links
+      a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Продукти
+      a.navbar-links__link.navbar-links__link_navbar-mobile.navbar-links__link_underline.navbar-links__link_selected.navbar-links__link_arrow-bottom(href="#") Можливості 100 +
+      a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Ціни
+      a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Клієнти
+      a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Підтримка
+      a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Компанія
+
+  // ========[FLOAT NAVBAR BEGIN]========
+  .float-navbar.hidden-sm.hidden-xs
+    .container
+      .row
+        a(href="/").logo.logo_navbar-float
+        ul.navbar-links.navbar-links_navbar-float.visible-md.visible-lg
+          li.navbar-links__button
+            a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Продукти
+            ul.dropdown
+              li
+                a.dropdown__link(href='/sale.html') Продаж та впровадження
+              li
+                a.dropdown__link(href='/cloud.html') Хмарний Контакт-центр
+              li
+                a.dropdown__link(href='/key.html') Контакт-центр під ключ
+          li.navbar-links__button
+            a.navbar-links__link.navbar-links__link_navbar-mobile.navbar-links__link_underline.navbar-links__link_selected-navbar-float(href="#") Можливості 100 +
+            ul.dropdown
+              li
+                a.dropdown__link(href='/functionality.html') Опис функціоналу
+              li
+                a.dropdown__link(href='/telemarketing.html') Телемаркетинги
+              li
+                a.dropdown__link(href='#') API
+              li
+                a.dropdown__link(href='/faq.html') FAQ
+          li.navbar-links__button
+            a.navbar-links__link.navbar-links__link_navbar-mobile(href="/prices.html") Ціни
+          li.navbar-links__button
+            a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Клієнти
+            ul.dropdown
+              li
+                a.dropdown__link(href='/features.html') Банки
+              //- li
+              //-   a.dropdown__link(href='/online-store') Інтернет-провайдери
+              //- li
+              //-   a.dropdown__link(href='#') Провайдери телебачення
+              li
+                a.dropdown__link(href='/online-store.html') Інтернет-магазини
+              li
+                a.dropdown__link(href='/support-service.html') Служби підтримки
+              li
+                a.dropdown__link(href='/outsourcing-cc.html') Аутсорсингові контакт-центри
+          li.navbar-links__button
+            a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Підтримка
+            ul.dropdown
+              li
+                a.dropdown__link(href='/support.html') Технічна підтримка
+              li
+                a.dropdown__link(href='/education.html') Навчання
+          li.navbar-links__button
+            a.navbar-links__link.navbar-links__link_navbar-mobile(href="#") Компанія
+            ul.dropdown
+              li
+                a.dropdown__link(href='/about-us.html') Про нас
+              li
+                a.dropdown__link(href='#') Блог
+              li
+                a.dropdown__link(href='/contacts.html') Контакти
+// ---------[MOBILE MENU END]---------

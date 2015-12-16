@@ -1,0 +1,183 @@
+mixin features(config)
+  - var _config = config || {}
+
+  // ========[FEATURES BEGIN]========
+  .content.features
+    //-PAGE TITLE
+    section.features-page-title
+      .container
+        .row
+          .col-md-24
+            h1.features-page-title__text Безперебійне рішення для великих контакт-центрів
+          .col-md-6.col-md-offset-3
+            .features-page-title__client.features-page-title__client_idea-bank.features-page-title__client_background
+          .col-md-6
+            .features-page-title__client.features-page-title__client_border.features-page-title__client_finline
+          .col-md-6
+            .features-page-title__client.features-page-title__client_idea-bank.features-page-title__client_background
+
+
+    section.features-counters
+      .container
+        .row
+          .col-sm-12.col-md-7
+            h3.features-counters__counter 123 600 000
+            h3.features-counters__explanation Хвилин розмов у контакт-центрі
+          .col-sm-12.col-md-6.col-md-offset-1
+            h3.features-counters__counter 300
+            h3.features-counters__explanation Операторiв гарантованно працють одночасно
+          .col-sm-12.col-md-5.col-md-offset-1
+            h3.features-counters__counter 99.9%
+            h3.features-counters__explanation Часу безперебiйноi роботи
+          .col-sm-12.col-md-3.col-md-offset-1
+            h3.features-counters__counter 24/7
+            h3.features-counters__explanation Підтримка клієнтів
+
+
+    section.feature-block.feature-block_gray
+      .container
+        .row
+          .col-md-13
+            h2.feature-block__title Collection
+            p.feature-block__description Фільтруйте базу по віндикаційних продуктах та обдзвонюйте
+              | не тільки клієнтів Банку, але і поручителів. Завчасно налаштовуйте комментарі для обіцянок про сплату для прискорення роботи оператора.
+              | Переглядайте детальну статистику по всіх віндикаційних дзвінках.Ще ніколи collection не виконувався так швидко та просто!
+          .col-md-11
+            img.feature-block__image.feature-block__image_float-right(src="images/features/debt-collection.png")
+
+    section.feature-block.feature-block_white
+      .container
+        .row
+          .col-md-13
+            h2.feature-block__title Адаптація рішення<br> під вимоги замовника (розробка)
+            p.feature-block__description.feature-block__description_justify VoIPTime Contact Center повністю
+              | налаштовується під Ваш тип бізнесу. Якщо Вам потрібен
+              | нестандартний функціонал, наші програмісти готові
+              | разробити його спеціально для Вас! Внаслідок цього Ви
+              | отримаєте персоналізований інструмент, який дозволить
+              | максимально автоматизувати всі процеси спілкування із
+              | клієнтами.
+          .col-md-11
+            img.feature-block__image.feature-block__image_float-right(src="images/features/adaptation.png")
+
+    section.carousel
+      .container
+        .row
+          h2.carousel__title Будь-які типи сценаріїв
+          p.carousel__description За допомогою зручного конструктора налаштовуйте сценарії розмов
+            | будь-якої складності за 15 хвилин! Швидко вносьте зміни
+            | без залучення програмістів. Переглядайте статистику по
+            | заповнених сценаріях та аналізуйте отримані дані<br> без жодних
+            | труднощів.
+        .row.visible-sm.visible-xs
+          .col-sm-24
+            img.cloud9-item__mobile.img-responsive(src='images/features/carousel1.png', alt='Item #1')
+        .row.hidden-sm.hidden-xs
+          #carousel.cloud9
+            img.cloud9-item(src='images/features/carousel1.png', height='373px', alt='Item #1')
+            img.cloud9-item(src='images/features/carousel2.png', height='373px', alt='Item #2')
+            img.cloud9-item(src='images/features/carousel3.png', height='373px', alt='Item #3')
+          #buttons.cf
+            .left.carousel__button.carousel__button_left
+            .right.carousel__button.carousel__button_right
+
+    section.feature-block.feature-block_gray
+      .container
+        .row
+          .col-md-11
+            img.feature-block__image(src="images/features/analytics.png")
+          .col-md-13
+            .tekst-danikkks
+              h2.feature-block__title Потужна аналітика для<br> вибірки бази обзвону
+              p.feature-block__description Більше не потрібно витрачати години на фільтрацію
+                | клієнтської бази та заливку заявок для обдзвону. Фільтруйте клієнтів за допомогою модуля
+                | аналітики у VoIPTime Contact Center та підтягуйте дані напряму із Вашої CRM-системи.
+
+    section.feature-block.feature-block_white.feature-block_border-bottom
+      .container
+        .row
+          .col-md-11
+            img.feature-block__image(src="images/features/integration.png")
+          .col-md-13
+            h2.feature-block__title Інтеграція із<br> будь-якою системою
+            p.feature-block__description.feature-block__description_justify VoIPTime Contact Center легко
+              | інтегрується із іншими бізнес-системами та зовнішніми
+              | продуктами завдяки відкритому API-інтерфейсу.
+              | Ваші оператори завжди володіють найактуальнішою
+              | інформацію щодо взаємодії із клієнтом.
+
+    section.feature-block.feature-block_white
+      .container
+        .row
+          .col-md-22.col-md-offset-1
+            h2.feature-block__question Що ще є у нашому програмному забезпеченні?
+          .col-md-14.col-md-offset-5
+            p.feature-block__answer В нашому програмному забезпеченні втілені 84 можливості, які вирішують будь-яку задачу.
+        .row
+          //row 1
+          .col-md-6.col-sm-12.col-md-offset-3
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_1
+              p.possibilities__label IVR
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_2
+              p.possibilities__label Web СallBack
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_3
+              p.possibilities__label Web-Chat
+
+          //row 2
+          .col-md-6.col-sm-12.col-md-offset-3
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_4
+              p.possibilities__label Automatic calls
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_5
+              p.possibilities__label SMS sending
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_6
+              p.possibilities__label Blacklist
+        .row
+          .col-md-10.col-md-offset-7
+            p.green-button.green-button_feature-block
+              a.green-button__link(href="#") Дивитися всi можливостi
+    //
+      section.reviews
+        .container
+          h2 Відгуки
+          .row
+            .col-md-24.block
+              .background
+                .big
+                  .small
+              .photo
+              .text
+                p.author Тамара Андріївна
+                p Аляквюид прёнкипыз ан кюм, ат доминг факильизиж дигнижжим дуо. Ут адхюк аккюжамюз шэа, ед шэа харюм констятюам. Аляквюид прёнкипыз ан кюм, ат доминг факильизиж дигнижжим дуо. Ут адхюк аккюжамюз шэа, ед шэа харюм констятюам.
+              .thumbnails
+                .arrows
+                  .top
+                  .bottom
+                .thumbnail
+                .thumbnail
+                .thumbnail
+                .thumbnail.active
+                .thumbnail
+              .dotted-block
+
+    section.feature-block.feature-block_application.feature-block_background-application
+      .container
+        .row
+          h2.application__title.col-md-24 Зверніться за консультацією
+        .row
+          p.application__description.col-md-10 Опишіть Ваші потреби, і
+            | ми запропонуємо Вам їх ідеальне вирішення!
+        .row
+          .col-md-10
+            a.big-button Залишити заявку
+
+  // ---------[FEATURES END]---------

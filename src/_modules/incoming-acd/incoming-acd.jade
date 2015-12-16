@@ -1,0 +1,50 @@
+mixin incoming-acd(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  // ========[description-CONTENT BEGIN]========
+  .content.description-article
+    //-PAGE TITLE
+    section.description__page-title
+      .container
+        .row
+          .col-md-3.hidden-xs.hidden-sm
+            .description__circle
+          .col-md-16
+            h1.description__page-title-text Вхідні  ACD
+    section.description-article__main
+      .container
+        //path
+        .row
+          .col-md-24
+            h2.description-article__desc Опис
+        .row
+          .col-md-18
+            p.description-article__paragraph У випадку вхідного дзвінка, дзвінок абонента, який дзвонить на зовнішній номер КЦ, потрапляє на певне вхідне ACD (automatic call distributor) – систему розподілення дзвінків. В залежності від налаштувань ACD дзвінок далі може потрапити, наприклад, на вхідний IVR, або відразу буде перенаправлений у загальну чергу дзвінків, де він буде очікувати його обробки оператором, або проходити ряд черг в залежності від налаштувань, поки потрібний оператор не обробить дзвінок. Наприклад, є можливість ідентифікувати абонента під час знаходження на IVR, та скреувати його саме на ту чергу, яку обробляють оператори потрібної кваліфікації.
+              | З черг дзвінки розподіляються по групах операторів, які мають право здійснювати обробку даного дзвінка.
+              | Ви можете самостійно створити перелік потрібних черг, налаштувати сценарій розмови, який буде підтягуватись операторам, та перенаправлення на номер, у випадку відсутності вільного оператора, тощо.
+
+
+            img.description-article__paragraph-image(src="images/incoming-acd/image1.png")
+            p.description-article__paragraph Принцип розподілення дзвінків по чергах має два алгоритми: по колу та по пріоритетах. По замовчуванню використовується “по колу”. У випадку розподілу “по пріорітету” дзвінок спочтаку потрапляє до найбільш пріорітетної черги.
+
+            p.description-article__paragraph Система маршрутизує дзвінки у відповідності до оптимального типу обслуговування (вільна лінія, вільний оператор, оператор з відповідними рівнем знань та ін.). Це дозволяє, наприклад, з’єднувати англомовних абонентів із операторами, які володіють англійською.
+
+          .col-md-6
+            ul.details
+              li.details__detail.details__detail-header
+                p.details__detail-header-text Деталі
+              li.details__detail
+                p.details__label Опублікована:
+                p.details__value.details__value_italic ООО.Voiptime
+              li.details__detail
+                p.details__label Версія:
+                p.details__value 1.2.1
+              li.details__detail
+                p.details__label Оновлена:
+                p.details__value 12.12.2015
+              li.details__detail
+                p.details__label Доступна в API:
+                p.details__value Так.
+                  a.details__value-link(href="#") Дивитись документацію
+

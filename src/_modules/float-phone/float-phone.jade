@@ -1,0 +1,13 @@
+mixin float-phone(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  form.float-phone
+    .float-phone__input-row
+      label.float-phone__label Ваше ім’я:
+      input.float-phone__input(type="text" name="name")
+    .float-phone__input-row
+      label.float-phone__label Телефон:
+      input.float-phone__input.float-phone__input_number(type="tel" name="number")
+    input(type="hidden" name="form-ident" value="float-phone")
+    button.float-phone__submit-button(type="submit") Замовити дзвінок

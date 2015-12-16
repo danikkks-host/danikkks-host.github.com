@@ -1,0 +1,8 @@
+mixin send-status(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .send-status
+    h4.send-status__text Спасибо, ваша заявка отправлена.
+    h4.send-status__text В ближайшее время наш менеджер
+    h4.send-status__text свяжеться с вами.

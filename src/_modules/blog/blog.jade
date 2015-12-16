@@ -1,0 +1,115 @@
+mixin blog(config)
+  - var _config = config || {}
+
+  // ========[BLOG-CONTENT BEGIN]========
+  .content.blog
+    //-PAGE TITLE
+    section.blog__page-title
+    section.blog__main
+      .container
+        //path
+        .row
+          .col-md-12
+            .path.path_faq-page
+              a.path__element.path__link(href="/") Головна
+              p.path__element.path__separator >
+              p.path__element.path__curent Статті в блозі
+
+        //blog-articles
+        .row
+          .blog-articles.col-md-16
+
+            .article
+              .article-thumbnail.hidden-xs.hidden-sm
+                a(href="#").article-thumbnail__link Детальніше
+              .article-text
+                a(href="#").article-text__title Lorem ipsum dolor sit.
+                //-max paragraph height 7 lines
+                p.article-text__paragraph Lorem ipsum dolor sit. Lorem
+                  | ipsum dolor sit amet, consectetur adipisicing elit.
+                  | Culpa ipsam unde consequuntur suscipit, omnis quaerat.
+                  | Dolorum eius, nostrum quae quisquam impedit aperiam libero.
+                  |  At, molestiae magni repellendus alias dolor assumenda. Mollitia
+                .article-text__information.article-datail.article-datail_blog
+                  .article-datail__item.article-datail__author Admin
+                  .article-datail__item.article-datail__data 12 Apr
+                  .article-datail__item.article-datail__likes 1001
+
+            .article
+              .article-thumbnail.hidden-xs.hidden-sm
+                a(href="#").article-thumbnail__link Детальніше
+              .article-text
+                a(href="#").article-text__title Lorem ipsum dolor sit.
+                //-max paragraph height 7 lines
+                p.article-text__paragraph Lorem ipsum dolor sit. Lorem
+                  | ipsum dolor sit amet, consectetur adipisicing elit.
+                  | Culpa ipsam unde consequuntur suscipit, omnis quaerat.
+                  | Dolorum eius, nostrum quae quisquam impedit aperiam libero.
+                  |  At, molestiae magni repellendus alias dolor assumenda. Mollitia
+                  | fuga vel culpa nam quibusdam, quos minima quis cumque!
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, eum.
+                .article-text__information.article-datail.article-datail_blog
+                  .article-datail__item.article-datail__author Admin
+                  .article-datail__item.article-datail__data 12 Apr
+                  .article-datail__item.article-datail__likes 1001
+
+            .article
+              .article-thumbnail.hidden-xs.hidden-sm
+                a(href="#").article-thumbnail__link Детальніше
+              .article-text
+                a(href="#").article-text__title Lorem ipsum dolor sit.
+                //-max paragraph height 7 lines
+                p.article-text__paragraph Lorem ipsum dolor sit. Lorem
+                  | ipsum dolor sit amet, consectetur adipisicing elit.
+                  | Culpa ipsam unde consequuntur suscipit, omnis quaerat.
+                  | Dolorum eius, nostrum quae quisquam impedit aperiam libero.
+                  |  At, molestiae magni repellendus alias dolor assumenda. Mollitia
+                  | fuga vel culpa nam quibusdam, quos minima quis cumque!
+                .article-text__information.article-datail.article-datail_blog
+                  .article-datail__item.article-datail__author Admin
+                  .article-datail__item.article-datail__data 12 Apr
+                  .article-datail__item.article-datail__likes 1001
+
+          //same articles
+          .blog-same-articles.col-md-8.visible-md.visible-lg
+
+            .blog-same-articles__label Статті по темі
+            a(href="#").blog-same-articles-article
+              h5.blog-same-articles-article__title Consectetur adipisicing.
+              p.blog-same-articles-article__paragraph  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Nostrum omnis dolorum voluptate eligendi officia eum.
+              .article-datail.article-datail_blog-same
+                .article-datail__item.article-datail__author.article-datail__author_blog-same Admin
+                .article-datail__item.article-datail__data.article-datail__data_blog-same 12 Apr
+                .article-datail__item.article-datail__likes.article-datail__likes_blog-same 1001
+
+            a(href="#").blog-same-articles-article
+              h5.blog-same-articles-article__title Lorem ipsum dolor.
+              p.blog-same-articles-article__paragraph  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Nostrum omnis dolorum voluptate eligendi officia eum.
+              .article-datail.article-datail_blog-same
+                .article-datail__item.article-datail__author.article-datail__author_blog-same Admin
+                .article-datail__item.article-datail__data.article-datail__data_blog-same 12 Apr
+                .article-datail__item.article-datail__likes.article-datail__likes_blog-same 1001
+
+            a(href="#").blog-same-articles-article
+              h5.blog-same-articles-article__title Ipsa mollitia ipsum ducimus qui.
+              p.blog-same-articles-article__paragraph  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Nostrum omnis dolorum voluptate eligendi officia eum.
+                | Lorem ipsum dolor sit amet.
+              .article-datail.article-datail_blog-same
+                .article-datail__item.article-datail__author.article-datail__author_blog-same Admin
+                .article-datail__item.article-datail__data.article-datail__data_blog-same 12 Apr
+                .article-datail__item.article-datail__likes.article-datail__likes_blog-same 1001
+
+            a(href="#").blog-same-articles__all-articles Всі статті в блозі
+
+
+        //controller buttons
+        .row
+          .col-md-16
+            .blog-page-controller
+              a(href="#").blog-page-controller__left
+              a(href="#").blog-page-controller__right
+
+  // ---------[BLOG-CONTENT END]---------

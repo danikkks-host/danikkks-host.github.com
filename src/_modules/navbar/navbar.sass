@@ -1,0 +1,176 @@
+// navbar styles
+
+
+.navbar-block
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  z-index: 101
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.21)
+  -moz-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.21)
+  box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.21)
+
+  .top-block
+    background-color: #273342
+
+    //float left
+    .social-icons
+      position: relative
+      &::before
+        content: ""
+        width: 16rem
+        height: 4px
+        background-color: #00b1c9
+        position: absolute
+        top: 42px
+        bottom: 0
+
+      .icon
+        display: inline-block
+        background-color: #00b1c9
+        border-radius: 2px
+        width: 28px
+        height: 2.8rem
+        position: relative
+        margin-top: 7px
+        margin-right: 8px
+        &:hover
+          cursor: pointer
+          background-color: #202a37
+        img,p
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          right: 0
+          margin: 0 auto
+
+      .icon-vk
+        p
+          font-family: sans-serif
+          font-weight: 800
+          color: white
+          font-size: 13px
+          text-align: center
+          padding-top: 4px
+      .icon-facebook
+        img
+          width: 7px
+          height: 26px
+      .icon-google
+        img
+          width: 15px
+          height: 26px
+      .icon-linkedin
+        img
+          width: 13px
+          height: 26px
+
+    //float right
+    .language
+      text-align: right
+
+      .ukr,
+      .rus,
+      .eng
+        background-color: #202a37
+        color: #fff
+        display: inline-block
+        font-family: 'Open Sans', sans-serif
+        font-size: 14px
+        padding: 10px 10px
+        margin: 0
+        border: none
+        &:hover
+          background-color: #00b1c9
+          cursor: pointer
+
+      .selected
+        background-color: #00b1c9
+
+      .margin-fix
+        margin-left: -4px
+
+
+  .bottom-block
+    background-color: #fff
+    //float left
+    .company-logo
+      background-image: url("../images/common/voipLogo.svg")
+      margin: 17px 0
+      background-position: center
+      background-size: 120px
+      background-repeat: no-repeat
+      width: 153px;
+      height: 49px;
+      &:hover
+        cursor: pointer
+
+    //float right
+    .request-call
+      text-align: right
+      position: relative
+      margin-top: 16px
+      &::before
+       content: ""
+       position: absolute
+       background-image: url("/images/common/tel.svg")
+       height: 29px
+       width: 26px
+       right: 240px
+       top: 15px
+       background-position: center
+
+      .tel
+        font-size: 21px
+        color: #273342
+        font-family: 'Open Sans', sans-serif
+        font-weight: 600
+        color: #202a37
+        line-height: 1.333
+        margin-bottom: 0
+      .link
+        font-size: 16px
+        font-family: 'Open Sans', sans-serif
+        line-height: 1.333
+        font-weight: 400
+        border-bottom: 1px dotted #273342
+        margin-bottom: 0
+        float:right
+        &:hover
+          cursor: pointer
+
+  .menu-block
+    background-color: #f1f1f1
+    border-top: 3px solid #e3e4e5
+    ul
+      margin: 7px 0
+      .underline
+        text-decoration: underline
+        position: relative
+        &::after
+          content: ""
+          position: absolute
+          top: 13px
+          right: 13px
+          width: 23px
+          height: 22px
+          background-image: url("../images/common/greenArrow.svg")
+          background-position: center
+      .selected
+        background-color: #00b1c9
+        color: white
+
+      li
+        display: inline
+        font-family: 'Open Sans', sans-serif
+        padding: 10px 43px 10px
+        font-size: 14px
+        color: #404040
+        margin: 0
+        font-weight: 600
+        &:hover
+          cursor: pointer
+          background-color: #00b1c9
+          color: white

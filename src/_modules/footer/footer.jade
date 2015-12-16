@@ -1,0 +1,72 @@
+mixin footer(config)
+  - var _config = config || {}
+
+  // ========[FOOTER BEGIN]========
+  .footer
+
+    //top block
+    .footer__top-block
+      .container
+        .row
+
+          //first footer block
+          .footer-block.functions.col-sm-12.col-md-8
+            p.footer-block__title Top Функціонал
+            ul.footer-block__links
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") IVR
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") Режим предиктив
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") Api інтеграція
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") Аналітика
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") Сапорт
+
+          //second footer block
+          .footer-block.col-sm-12.col-md-8
+            p.footer-block__title Рішення
+            ul.footer-block__links
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") Банки
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") Фінансові структури
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") Колекторські компанії
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") Провайдери телебачення
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") Служби підтримки
+              li.footer-block__link-element
+                a.footer-block__link(href="/#") Аутсорсингові контакт центри
+
+          //third footer block
+          .footer-block.col-sm-24.col-md-8.hidden-xs.hidden-sm
+            .footer-request-call
+              p.footer-block__title.footer-request-call__title Зв'язатися із нами
+              p.footer-request-call__tel +38 (044) 490-77-70
+              p.footer-request-call__tel +38 (032) 232-80-22
+              p.footer-request-call__link Замовити зворотнiй дзвінок
+
+    //bottom block
+    .footer__bottom-block
+      .container
+        .row
+          .social-icons.col-md-24
+
+            a(href="https://www.linkedin.com/company/voiptime").social-icons__icon.social-icons__icon_linkedin
+              img(src="images/common/linkedIn.svg", width="10px")
+
+            a(href="").social-icons__icon.social-icons__icon_google
+              img(src="images/common/googlePlus.svg", width="10px")
+
+            a(href=" https://www.facebook.com/voiptime").social-icons__icon.social-icons__icon_facebook
+
+              img(src="images/common/facebook.svg", width="10px")
+            a(href="https://vk.com/voiptime").social-icons__icon.social-icons__icon_vk
+              p B
+
+  .mobile-callback.visible-xs.visible-sm
+  .mobile-callback-icon.visible-xs.visible-sm
+  // ---------[FOOTER END]---------

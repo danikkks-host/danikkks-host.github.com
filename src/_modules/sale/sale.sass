@@ -1,0 +1,124 @@
+// sale styles
+/* ========================================[ VIDEO BLOCK ]======================================== */
+.video
+  height: 400px
+  background-image: url(../images/sale/titleBackground.png)
+  background-position: center
+  background-size: cover
+  @media(min-width: 1400px)
+    height: 600px
+
+/* ===video elements=== */
+.video__play-button
+  border-radius: 50%
+  z-index: 50
+  height: 50px
+  width: 50px
+  position: relative
+  margin: 3px
+  margin-bottom: 17px
+  position: relative
+  margin: 0 auto
+  margin-top: 33px
+  border: 1px solid #fff
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 50px
+    height: 50px
+    background-image: url(../images/sale/play.png)
+    background-position: 11px 9px
+    background-size: 30px
+    background-repeat: no-repeat
+  &:hover
+    cursor: pointer
+    background: #0BD77D
+
+.video__title
+  color: #fff
+  font-family: "Roboto", sans-serif
+  font-size: 30px
+  font-weight: 400
+  line-height: 48px
+  text-align: center
+  margin-top: 0
+  padding-top: 0
+  margin-bottom: 60px
+  margin-top: 90px
+
+/* ===video modifiers=== */
+
+
+/* ===================[ VIDEO END ]=================== */
+
+
+
+
+
+
+
+/* ========================================[ MODAL VIDEO BLOCK ]======================================== */
+.modal-video
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: rgba(0, 0, 0, 0.8)
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 99
+
+
+/* ===modal video elements=== */
+.modal-video__close
+  position: fixed
+  top: 10px
+  color: white
+  font-size: 40px
+  right: 30px
+  &:hover
+    cursor: pointer
+
+/* ===modal video modifiers=== */
+
+
+/* ===================[ MODAL VIDEO END ]=================== */
+
+
+
+
+
+
+
+
+.ten-block
+  margin-top: 36px
+  background-size: 450px
+  border-radius: 6px
+  background-position: center
+  background-repeat: no-repeat
+  padding: 20px 0
+  @media(min-width: 1400px)
+    margin-top: 150px
+  .ten
+    background-image: url(../images/index/10.png)
+    background-repeat: no-repeat
+    width: 80px
+    height: 82px
+    background-size: cover
+    margin: 0 auto
+  .reasons
+    letter-spacing: .1px
+    text-align: center
+    font-family: 'Roboto', sans-serif
+    color: #F2F2F2
+    font-size: 30px
+    font-weight: 300
+    line-height: 36px
+    margin: 7px 0 10px
+    span
+      font-weight: 400

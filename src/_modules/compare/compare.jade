@@ -1,0 +1,209 @@
+mixin compare(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  // ========[SUPPORT BEGIN]========
+  .content.blog-article
+    //-PAGE TITLE
+    section.blog__page-title.blog__page-title_compare
+      h1.blog__page-title-text Придбання VoIPTime Contact Center
+
+    section
+      .container
+        .row
+          .col-md-24
+            h1.compare-table-title Порівняйте комплектацію VoIPTime Contact Center
+        .row
+          .col-md-24
+            .compare-table
+
+
+              .compare-table__header.compare-table__row_header
+
+                .compare-table__row
+                  .compare-table__col.compare-table__col_header.compare-table__item.compare-table__item_long
+                  .compare-table__col.compare-table__col_header.compare-table__inbound Inbound
+                  .compare-table__col.compare-table__col_header.compare-table__outbound Outbound
+                  .compare-table__col.compare-table__col_header.compare-table__multichanel Multichannel<br> Contact Center
+                  .compare-table__col.compare-table__col_header.compare-table__saas SaaS
+
+
+              .compare-table__body
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Обробка вхідних ACD
+                  .compare-table__col.compare-table__inbound.compare-table__col_plus
+                  .compare-table__col.compare-table__outbound.compare-table__col_plus
+                  .compare-table__col.compare-table__multichanel.compare-table__col_plus
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Обробка телемаркетингів
+                  .compare-table__col.compare-table__inbound.compare-table__col_minus
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Режими вихідного обдзвону (Preview, Progressive, Predictive)
+                  .compare-table__col.compare-table__inbound
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Автообдзвони
+                  .compare-table__col.compare-table__inbound.compare-table__col_plus
+                  .compare-table__col.compare-table__outbound.compare-table__col_plus
+                  .compare-table__col.compare-table__multichanel.compare-table__col_plus
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Веб-чати
+                  .compare-table__col.compare-table__inbound.compare-table__col_minus
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long SMS-розсилка
+                  .compare-table__col.compare-table__inbound
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Email, факси
+                  .compare-table__col.compare-table__inbound.compare-table__col_plus
+                  .compare-table__col.compare-table__outbound.compare-table__col_plus
+                  .compare-table__col.compare-table__multichanel.compare-table__col_plus
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Замовлення зворотнього дзвінка (IVR, SMS CallBack)
+                  .compare-table__col.compare-table__inbound.compare-table__col_minus
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Collection
+                  .compare-table__col.compare-table__inbound
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Планування робочого графіку
+                  .compare-table__col.compare-table__inbound.compare-table__col_plus
+                  .compare-table__col.compare-table__outbound.compare-table__col_plus
+                  .compare-table__col.compare-table__multichanel.compare-table__col_plus
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Work Flow (автоматичні події)
+                  .compare-table__col.compare-table__inbound.compare-table__col_minus
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Карти якості
+                  .compare-table__col.compare-table__inbound
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Автоматичне резервування і відновлення бази даних
+                  .compare-table__col.compare-table__inbound.compare-table__col_plus
+                  .compare-table__col.compare-table__outbound.compare-table__col_plus
+                  .compare-table__col.compare-table__multichanel.compare-table__col_plus
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Автоматичне оновлення ПЗ
+                  .compare-table__col.compare-table__inbound.compare-table__col_minus
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas.compare-table__col_plus
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long API-інтерфейс
+                  .compare-table__col.compare-table__inbound
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas.compare-
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col_special Вартість
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Наявність власного серверу
+                  .compare-table__col.compare-table__inbound
+                  .compare-table__col.compare-table__outbound
+                  .compare-table__col.compare-table__multichanel
+                  .compare-table__col.compare-table__saas
+
+                .compare-table__row.compare-table__row_white.compare-table__row_bottom-border
+                  .compare-table__col.compare-table__item.compare-table__item_long Ліцензія користувача
+                  .compare-table__col.compare-table__col_money.compare-table__inbound $180/разово
+                  .compare-table__col.compare-table__col_money.compare-table__outbound $270/разово
+                  .compare-table__col.compare-table__col_money.compare-table__multichanel $390/разово
+                  .compare-table__col.compare-table__col_money.compare-table__saas $29/разово
+
+                .compare-table__row.compare-table__row_white
+                  .compare-table__col.compare-table__item.compare-table__item_long Серверна ліцензія
+                  .compare-table__col.compare-table__col_money.compare-table__inbound $1599
+                  .compare-table__col.compare-table__col_money.compare-table__outbound $2999
+                  .compare-table__col.compare-table__col_money.compare-table__multichanel $4000
+                  .compare-table__col.compare-table__col_money.compare-table__saas $0
+
+        .row
+          .col-md-10.col-md-offset-7
+            p.green-button.green-button_compare
+              a.green-button__link(href="#") Запишитесь на демо презентацию
+
+    section.gray-section
+      .container
+        .row
+          .col-md-24
+            .common-question
+              h3.common-question__label Распространненые вопросы
+        .row
+          .col-md-8
+            .common-question__column
+              p.common-question__column-label Демоверсия
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+          .col-md-8
+            .common-question__column
+              p.common-question__column-label Приобретение Voiptime
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+          .col-md-8
+            .common-question__column
+              p.common-question__column-label Использование Voiptime
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.

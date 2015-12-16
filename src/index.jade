@@ -1,0 +1,30 @@
+extends _layouts/base
+
+include _modules/navbar-second/navbar-second
+include _modules/footer/footer
+include _modules/index2/index2
+include _modules/float-phone/float-phone
+include _modules/float-consultation/float-consultation
+include _modules/send-status/send-status
+include _modules/call-back-form/call-back-form
+
+block navbar
+  #[+navbar-second]
+
+block content
+  #[+index2]
+
+//- block float-phone
+//-   #[+float-phone]
+
+//- block float-consultation
+//-   #[+float-consultation]
+
+//- block send-status
+//-   #[+send-status]
+
+//- block call-back-form
+//-   #[+call-back-form]
+
+block footer
+  #[+footer]

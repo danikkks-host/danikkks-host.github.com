@@ -1,0 +1,340 @@
+mixin functionality(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  // ========[Functionality]========
+  .content.features
+    //-PAGE TITLE
+    section.features-page-title.features-page-title_functions.features-page-title__text_padding-bottom
+      .container
+        .row
+          .col-md-24
+            h1.features-page-title__text + 100 можливостей voiptime
+            h2.features-page-title__text.features-page-title__text_small функцiонал, який вирiшуе всi вашi задачi
+
+    section.functionality__top-bar
+      .container
+        .row
+          .col-md-24
+            .page-block.page-block_functionality-page
+              .row
+                .col-md-3
+                  .dropdown-menu.cf
+                      p.dropdown-menu__label Категорія
+                      .dropdown-menu__button
+                      ul.dropdown-menu__dropdown.display-none
+                        a(href="#").dropdown-menu__dropdown-element-link
+                          li.dropdown-menu__dropdown-element Cat
+                        a(href="#").dropdown-menu__dropdown-element-link
+                          li.dropdown-menu__dropdown-element Cat
+                        a(href="#").dropdown-menu__dropdown-element-link
+                          li.dropdown-menu__dropdown-element Cat
+                        a(href="#").dropdown-menu__dropdown-element-link
+                          li.dropdown-menu__dropdown-element Catcatcat
+                        a(href="#").dropdown-menu__dropdown-element-link
+                          li.dropdown-menu__dropdown-element Cat
+                        a(href="#").dropdown-menu__dropdown-element-link
+                          li.dropdown-menu__dropdown-element Cat
+
+                .col-md-6.pull-right
+                  .search
+                    input.search__input
+                    .search__icon
+
+
+    section.functionality__items
+      .container
+        .row
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description.cf
+                  .function-square-description__flex-container
+                    .function-square-description__text Обробка звернень з різних каналів
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_1
+              p.function-item__label Універсальний <br>агент
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Створення ролей користувачів із будь-яким набором вкладок
+
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_2
+              p.function-item__label Налаштування<br> ролей
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Виведення картки клієнта та історії звернень під час розмови
+                  a(href="/incoming-acd.html").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_3
+              p.function-item__label Вхідні  ACD
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Просте налаштування кампаній вихідного обдзвону
+                  a(href="/telemarketing.html").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_4
+              p.function-item__label Телемаркетинги
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veritatis accusantium, sapiente molestias quasi ad.
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_5
+              p.function-item__label Динамічна <br>маршрутизація
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Автоматичні продзвони по базі без участі оператора
+
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_6
+              p.function-item__label Автоматичні <br>(IVR) продзвони
+        .row
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Просте створення сценаріїв голосового меню
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_7
+              p.function-item__label Конструктор <br>IVR-сценаріїв
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Спілкування з клієнтами у веб-чаті
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_8
+              p.function-item__label Веб-чат
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Прийом та відправка факсів
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_9
+              p.function-item__label Факси
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Прийом та відправка електронних листів
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_10
+              p.function-item__label Еmail
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Масова персоналізована SMS розсилка
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_11
+              p.function-item__label Відправлення <br>персоналізованих<br> SMS
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Автоматизація обробки зворотніх дзвінків із сайту
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_12
+              p.function-item__label Інтеграція із <br>сайтом <br>Web CallBack
+        .row
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Замовлення зворотнього дзвінка під часпрослуховування IVR або за допомогою SMS
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_13
+              p.function-item__label IVR, SMS CallBack
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Створення та редагування чорного списку абонентів
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_14
+              p.function-item__label Чорний список
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Першочергове обслуговування VIP клієнтів, призначення персональних операторів
+
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_15
+              p.function-item__label Обслуговування<br> VIP клієнтів
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Планування передзвонів клієнту, автоматичний передзвін
+
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_16
+              p.function-item__label Планування <br>передзвонів <br>(CallBack)
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Функціонал для роботи з боржниками (для фінустанов)
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_17
+              p.function-item__label Collection
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Створення груп операторів, налаштування пріорітетів у групі, призначення по декілька задач кожній з груп
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_18
+              p.function-item__label Створення груп <br>операторів
+        .row
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Здійснення внутрішніх дзвінків всередині контакт-центру
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_19
+              p.function-item__label Внутрішні дзвінки
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Спілкування у внутрішніх чатах між операторами, супервізорами та менеджерами.
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_20
+              p.function-item__label Внутрішні чати
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Зручний конструктор сценаріїв розмов з декількома типами сценаріїв
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_21
+              p.function-item__label Сценарії розмов
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Моніторинг за кількістю звернень до контакт-центру, статусами операторів, та ін. Суфлювання, конференція та прослуховування активних розмов.
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_22
+              p.function-item__label Онлайн-моніторинг
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Детальні звіти по всіх параметрах роботи контакт-центру
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_23
+              p.function-item__label Статистика
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Автоматичний запис 100% розмов
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_24
+              p.function-item__label Запис всіх розмов
+        .row
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Оцінка роботи операторів за попередньо налаштованими картами якості
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_25
+              p.function-item__label Карти якості
+          .col-md-4
+            .function-item
+              .function-square.cf
+                .function-square-description
+                  .function-square-description__flex-container
+                    .function-square-description__text Планування та затвердження робочого графіку операторів.
+                  a(href="#").function-square-description__link Детальніше
+                .function-square__circle.function-square__circle_26
+              p.function-item__label Work Force <br>Management
+
+
+    section.simple-faq
+      .container
+
+
+        //tabs
+        .row
+          .col-md-24
+            button.simple-faq__tab.simple-faq__tab_current( data-tab="tab-1") Запитання - відповіді
+            button.simple-faq__tab( data-tab="tab-2") Все що потрібно знати
+
+
+        //tabs content
+        #tab-1.simple-faq__tabs-content.simple-faq__tabs-content_current
+          .row
+            .col-md-12
+              .faq-list-item__question.faq-list-item__question_gray
+                  .faq-list-item-question-icon.faq-list-item-question-icon__small-faq ?
+                  .faq-list-item-question-text.faq-list-item-question-text__simple-faq Ipsum dolor sit amet, consectetur adipisicing.
+          .row
+            .col-md-24
+              p.simple-faq__text Veniam, illum, similique! Dolores tenetur deleniti aliquid veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique beatae dignissimos repellendus quia cupiditate quo aliquam esse a! Quam illo ea tenetur esse recusandae mollitia sunt fugit, accusamus, eos molestiae. Rerum placeat cupiditate, atque explicabo quidem consequuntur enim facilis iste.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia repudiandae eligendi eveniet, molestias ducimus modi architecto nisi. Minima minus veniam laboriosam quidem doloremque, sapiente libero odit corporis commodi, vitae explicabo, nulla culpa qui similique blanditiis placeat illo cupiditate laudantium error sit consequuntur.
+          .row
+            .col-md-12
+              .faq-list-item__question.faq-list-item__question_gray
+                  .faq-list-item-question-icon.faq-list-item-question-icon__small-faq ?
+                  .faq-list-item-question-text.faq-list-item-question-text__simple-faq  Lorem ipsum dolor sit amet, consectetur adipisicing.
+          .row
+            .col-md-24
+              p.simple-faq__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique beatae dignissimos repellendus quia cupiditate quo aliquam esse a! Quam illo ea tenetur esse recusandae mollitia sunt fugit, accusamus, eos molestiae. Rerum placeat cupiditate, atque explicabo quidem consequuntur enim facilis iste.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia repudiandae eligendi eveniet, molestias ducimus modi architecto nisi. Minima minus veniam laboriosam quidem doloremque, sapiente libero odit corporis commodi, vitae explicabo, nulla culpa qui similique blanditiis placeat illo cupiditate laudantium error sit consequuntur. Veniam, illum, similique! Dolores tenetur deleniti aliquid veritatis.
+
+
+        #tab-2.simple-faq__tabs-content
+          .row
+            .col-md-12
+              .faq-list-item__question.faq-list-item__question_gray
+                  .faq-list-item-question-icon.faq-list-item-question-icon__small-faq ?
+                  .faq-list-item-question-text.faq-list-item-question-text__simple-faq Adipisicing. Lorem ipsum dolor sit.
+          .row
+            .col-md-24
+              p.simple-faq__text  Autque explicabo quidem consequuntur enim facilis iste.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia repudiandae eligendi eveniet, molestias ducimus modi architecto nisi. Minima minus veniam laboriosam quidem doloremque, sapiente libero odit corporis commodi, vitae explicabo, nulla culpa qui similique blanditiis placeat illo cupiditate laudantium error sit consequuntur. Veniam, illum, similique! Dolores tenetur deleniti aliquid veritatis.
+          .row
+            .col-md-12
+              .faq-list-item__question.faq-list-item__question_gray
+                  .faq-list-item-question-icon.faq-list-item-question-icon__small-faq ?
+                  .faq-list-item-question-text.faq-list-item-question-text__simple-faq  Lorem ipsum dolor sit amet, consectetur adipisicing.
+          .row
+            .col-md-24
+              p.simple-faq__text  Quam illo ea tenetur esse recusandae mollitia sunt fugit, accusamus, eos molestiae. Rerum placeat cupiditate, atque explicabo quidem consequuntur enim facilis iste.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia repudiandae eligendi eveniet, molestias ducimus modi architecto nisi. Minima minus veniam laboriosam quidem doloremque, sapiente libero odit corporis commodi, vitae explicabo, nulla culpa qui similique blanditiis placeat illo cupiditate laudantium error sit consequuntur. Veniam, illum, similique! Dolores tenetur deleniti aliquid veritatis.
+

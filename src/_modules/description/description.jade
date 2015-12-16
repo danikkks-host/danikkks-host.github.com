@@ -1,0 +1,48 @@
+mixin description(config)
+  - var _config = config || {}
+
+  // ========[description-CONTENT BEGIN]========
+  .content.description-article
+    //-PAGE TITLE
+    section.description__page-title
+      .container
+        .row
+          .col-md-3.hidden-xs.hidden-sm
+            .description__circle
+          .col-md-16
+            h1.description__page-title-text Представте что настроить его можно без технического cпециалиста
+    section.description-article__main
+      .container
+        //path
+        .row
+          .col-md-24
+            img.description-article__image.img-responsive(src="/images/description/description.jpg")
+        .row
+          .col-md-24
+            h2.description-article__desc Опис
+        .row
+          .col-md-18
+            p.description-article__paragraph Lorem ipsum dolor sit. Lorem
+              | ipsum dolor sit amet, consectetur adipisicing elit.
+              | Culpa ipsam unde consequuntur suscipit, omnis quaerat.
+              | Dolorum eius, nostrum quae quisquam impedit aperiam libero.
+              |  At, molestiae magni repellendus alias dolor assumenda. Mollitia
+              | fuga vel culpa nam quibusdam, quos minima quis cumque!
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, eum.
+          .col-md-6
+            ul.details
+              li.details__detail.details__detail-header
+                p.details__detail-header-text Деталі
+              li.details__detail
+                p.details__label Опублікована:
+                p.details__value.details__value_italic ООО.Voiptime
+              li.details__detail
+                p.details__label Версія:
+                p.details__value 1.2.1
+              li.details__detail
+                p.details__label Оновлена:
+                p.details__value 12.12.2015
+              li.details__detail
+                p.details__label Доступна в API:
+                p.details__value Так.
+                  a.details__value-link(href="#") Дивитись документацію

@@ -1,0 +1,23 @@
+mixin float-consultation(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  form.float-consultation
+    .float-consultation__header
+      h4.float-consultation__header-label Безкоштовна консультація
+      a.float-consultation__header-close
+    .float-consultation__body
+      .float-phone__input-row
+        label.float-consultation__label Ваше ім’я:
+        input.float-consultation__input.float-consultation__input_name(type="text" name="name")
+      .float-consultation__input-row
+        label.float-consultation__label Телефон:
+        input.float-consultation__input.float-consultation__input_number(type="tel" name="number")
+      .float-consultation__input-row
+        label.float-consultation__label Email:
+        input.float-consultation__input.float-consultation__input_email(type="email" name="email")
+      .float-consultation__input-row
+        label.float-consultation__label.float-consultation__label_message Повідомлення:
+        textarea.float-consultation__input.float-consultation__input_message(type="text" name="message")
+      input(type="hidden" name="form-ident" value="float-phone")
+      button.float-consultation__submit-button(type="submit") Замовити безкоштовну консультацію

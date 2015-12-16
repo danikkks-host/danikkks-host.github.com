@@ -1,0 +1,212 @@
+mixin index2(config)
+  - var _config = config || {}
+
+  // ========[INDEX BEGIN]========
+  .content.index
+    //-PAGE TITLE
+    section.index-page-title
+      .index-page-title__background.hidden-md.hidden-lg
+      video.hidden-sm.hidden-xs.index-page-title__video(autoplay poster="/videos/video.jpg")
+        source(src="/videos/video.mp4" type="video/mp4")
+      .container
+        .row
+          .col-md-9
+            .logo.logo_light
+        .row
+          .col-md-11
+            h2.index-page-title__text Программне рішення для контакт-центрів від <span class="index-page-title__text-span">3</span> до <span class="index-page-title__text-span">300</span> операторів
+        .row
+          .col-md-9
+            a.big-button.big-button_orange Спробувати безкоштовно
+
+    section.what-we-do
+      .container
+        .row
+          .col-md-24
+            h2.what-we-do__title Наші послуги
+        .row
+          .col-md-6.col-md-offset-2
+            a(href="/sale.html").what-we-do__circle.what-we-do__circle-background-green
+              .what-we-do__circle-icon.what-we-do__circle-icon_circle2
+            a(href="/sale.html")
+              p.what-we-do__text Продаж та впровадження VoIPTime Contact Center
+          .col-md-6.col-md-offset-1
+            a(href="/cloud.html").what-we-do__circle.what-we-do__circle-background-green
+              .what-we-do__circle-icon.what-we-do__circle-icon_circle1
+            a(href="/cloud.html")
+              p.what-we-do__text Хмарний контакт-центр
+          .col-md-6.col-md-offset-1
+            a(href="/key.html").what-we-do__circle.what-we-do__circle-background-green
+              .what-we-do__circle-icon.what-we-do__circle-icon_circle3
+            a(href="/key.html")
+              p.what-we-do__text Контакт-центр під ключ
+
+    section.best-service
+      .container
+        .row
+          .col-md-22.col-md-offset-1
+            h2.best-service__title Кращий клієнтський сервіс починається з<br> контакт-центру!
+          .row
+            .col-md-22.col-md-offset-1
+              p.best-service__text З нами Ви отримуєте найкраще рішення на ринку, а стабільність нашого продукту підтверджена роками, адже нам довіряють банки та великі корпорації... Ми дослуховуємося до кожного, адаптовуємо та автоматизовуємо Ваші процеси...<br> Фантастика? З нами це реальність!
+          .row
+            .col-md-12.best-service__right-line
+              h3.best-service__big-number 99,9
+                span.best-service__big-number_top-text.best-service__big-number_thin-text %
+              p.best-service__big-number-description Ваших клієнтів будуть обслужені з першого контакту. Наша стабільність підтверджена моніторинговою системою
+
+            .col-md-12
+              h3.best-service__big-number 8
+                span.best-service__big-number_thin-text /
+                span 10
+              p.best-service__big-number-description 8 наших клієнтів з 10 потребують індивідуального підходу. Немає універсального рішення, тому що в кожного свій бізнес процес
+
+    section.index-block.index-block-slider
+      .container
+        .row
+          .col-md-8.index
+
+            .index-block-slider__description.index-block-slider__description_active.cf(slide="0")
+              h4.index-block-slider__description-title Дзвінки
+              p.index-block-slider__description-text Обробка дзвінків та кампаній вихідного обдзвону
+              a(href="#").index-block-slider__description-link Детальніше
+
+            .index-block-slider__description.cf(slide="1")
+              h4.index-block-slider__description-title Статистика
+              p.index-block-slider__description-text Деталізовані звіти та онлайн-моніторинг по всіх параметрах роботи контакт-центру
+              a(href="#").index-block-slider__description-link Детальніше
+
+            .index-block-slider__description.cf(slide="2")
+              h4.index-block-slider__description-title API
+              p.index-block-slider__description-text Відкритий API-інтерфейс, який дозволяє здійснити повноцінну інтеграцію із будь-якою CRM-системою.
+              a(href="#").index-block-slider__description-link Детальніше
+
+            .index-block-slider__description.cf(slide="3")
+              h4.index-block-slider__description-title WEB-CHAT
+              p.index-block-slider__description-text Спілкування із клієнтами у веб-чаті, а також ініціація оператором веб-чату із клієнтом, який є онлайн
+              a(href="#").index-block-slider__description-link Детальніше
+
+          .col-md-15.col-md-offset-1.slider-wrapper
+            ul.bxslider
+              li
+                img.img-responsive(src='/images/index2/slider1.png')
+              li
+                img.img-responsive(src='/images/index2/slider2.png')
+              li
+                img.img-responsive(src='/images/index2/slider3.png')
+              li
+                img.img-responsive(src='/images/index2/slider4.png')
+            #bx-pager.hidden-sm.hidden-xs
+              a(data-slide-index='0', href='')
+                .bx-slider-thumbnail
+                  .bx-slider-thumbnail__background
+                  .bx-slider-thumbnail__icon.bx-slider-thumbnail__1
+              a(data-slide-index='1', href='')
+                .bx-slider-thumbnail
+                  .bx-slider-thumbnail__background
+                  .bx-slider-thumbnail__icon.bx-slider-thumbnail__2
+              a(data-slide-index='2', href='')
+                .bx-slider-thumbnail
+                  .bx-slider-thumbnail__background
+                  .bx-slider-thumbnail__icon.bx-slider-thumbnail__3
+              a(data-slide-index='3', href='')
+                .bx-slider-thumbnail
+                  .bx-slider-thumbnail__background
+                  .bx-slider-thumbnail__icon.bx-slider-thumbnail__4
+
+
+    section.index-block.index-block_eggplant
+      .container
+        .row
+          .col-md-14.col-md-offset-10
+            h2.index-block__title Швидкий шлях підвищення<br> продаж та покращення якості
+            p.index-block__text Автоматизуйте обробку всіх звернень у власному контакт-центрі.
+              | Забудьте про колишнє незадоволення клієнтів та пропущені дзвінки.
+              | Швидко та ефективно обдзвонюйте клієнтів, надсилайте необхідні комерційні пропозиції
+              | у два кліки. Забезпечуйте найвищий рівень сервісу та заробляйте більше!
+
+    section.index-block
+      .container
+        .row
+          .col-md-24
+            h2.index-block__title.index-block__title_black.index-block__title_center Повний контроль
+        .row.row-md-flex-center.row-lg-flex-center
+          .col-md-11
+            p.index-block__text.index-block__text_black Ви гнучко налаштовуєте ролі користувачів та надаєте
+              | їм права на перегляд будь-яких вкладок. Ви завжди можете бути впевнені, що жоден із ваших
+              | підлеглих не отримав несанкціонованого доступу до налаштувань кампаній або черг.
+          .col-md-11.col-md-offset-2
+            img.index-block__image.img-responsive(src="images/index2/screenshot1.jpg")
+
+    section.index-block.index-block.index-block_background1
+      .container
+        .row
+          .col-md-24
+            h2.index-block__title.index-block__title_black.index-block__title_center Повна конфіденційність
+        .row.row-md-flex-center.row-lg-flex-center
+          .col-md-11
+            img.index-block__image.img-responsive.index-block__image_float-right(src="images/index2/screenshot2.jpg")
+          .col-md-11.col-md-offset-2
+            p.index-block__text.index-block__text_black Ви самостійно контролюєте безпеку даних, зберігаючи їх у себе.
+              | У випадку інтеграції рішення з Вашою CRM оператори бачать в системі контакт-центру лише ті дані, які
+              | необхідні їм для роботи. Договір про нерозголошення за потреби підписується із Вами до проведення інтеграційних робіт.
+              | Це рішення ідеально підходить для банків та інших фінансових закладів, лікарень и державних установ тощо.
+
+
+    section.index-block.index-block_gray
+      .container
+        .row
+          .col-md-24
+            h2.index-block__title.index-block__title_black.index-block__title_center Швидкий старт і масштабування
+        .row.row-md-flex-center.row-lg-flex-center
+          .col-md-11
+            p.index-block__text.index-block__text_black Налаштування навіть великого і складного контакт-центру нашими
+              | спеціалістами займає до 2 тижнів. При цьому контакт-центр може бути будь-якого розміру і конфігурації —
+              | їх визначаєте тільки Ви. Надішліть нам завдання, в якому описані параметри SIP-ліній, напрямки дзвінків,
+              | кількість користувачів в Вашому контакт-центрі та інші деталі, і ми швидко і якісно перетворимо Ваш проект
+              | на реальний функціональний контакт-центр.
+          .col-md-11.col-md-offset-2
+            img.index-block__image.img-responsive(src="images/index2/screenshot3.jpg")
+
+    section.index-block.index-block_women
+      .container
+        .row
+          .col-md-11.col-md-offset-13
+            h2.index-block__title.index-block__title_black Повна підтримка
+            p.index-block__text.index-block__text_black Ми підтримуємо наших клієнтів в режимі  24/7 роками.
+              | Придбавши VoIPTime Contact Center, Ви можете розраховувати на нас в будь-який час.
+              | За потреби Ви можете заключити з нами договір, згідно якого мивізьмемо
+              | на себе відповідальність за те, аби Ваш контакт-центр працював бездоганно. Також за потреби
+              | Ви можете замовити у нас цілодобову підтримку. Із нами Ваш контакт-центр буде працювати бездоганно!
+
+    section.index-block.index-block_background3
+      .container
+        .row
+          .col-md-24
+             h2.index-block__title.index-block__title_black.index-block_center-text Миттєва і віддалена економія
+        .row
+          .col-md-20.col-md-offset-2
+            p.index-block__text.index-block__text_black.index-block_center-justify Ви можете розпочати співпрацю із нами
+              | із роботи у хмарі, вкладаючи лише по 0,99 цента в день за одного оператора!
+              | Якщо ж Ви зацікавлені у впровадженні рішення на власній площадці, просто оберіть
+              | потрібну версію VoIPTime Contact Center та вкажіть нам потріюну кількість операторів.
+              | Ціни на придбання стартують від $180 за одного оператора. При цьому ваші інвестиції у
+              | обладнання та програмне рішення одноразові, а єкономія почнеться вже із перших днів використання!
+        .row
+          .col-md-24
+            img.index-block__card.img-responsive(src="images/index2/card.png")
+            .index-block__card-detail
+              a.index-block__card-detail-link(href="/prices.html") Детальніше
+
+    section.index-block.index-block_background4.index-callback
+      .container
+        .row
+          .col-md-24
+            h2.index-block__title.index-block__title_black.index-block_center-text.index-callback_title-margin Зверніться до нас вже сьогодні!
+            p.index-block__text.index-block__text_black.index-block_center-text.index-callback_text-margin Ми вивчимо ваші потреби та запропонуємо найкращий варіант реалізації бізнес-логіки.
+        .row
+          .col-md-8.col-md-offset-8
+            a.big-button.big-button_orange Залишити заявку
+
+
+  // ---------[FEATURES END]---------

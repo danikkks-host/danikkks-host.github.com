@@ -1,0 +1,282 @@
+mixin faq(config)
+  - var _config = config || {}
+
+  .content.faq
+    //-PAGE TITLE
+    section.faq__page-title
+    section.faq__main
+      .container
+
+        .row
+          .col-md-12
+            .path.path_faq-page
+              a.path__element.path__link(href="/") Головна
+              p.path__element.path__separator >
+              p.path__element.path__curent Запитання відповідь
+
+          .col-md-12
+            .faq-search
+              input.faq-search__input(placeholder="Введіть слово")
+              .faq-search-button
+                .faq-search-button__icon
+                .faq-search-button__text Пошук
+
+        .row
+          //-Faq list
+          .faq-list.col-md-24
+
+            h3.faq-list__item.faq-list-item.faq-list-item__category Хмара
+
+            .category-wrapper
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Чи відрізняється функціонал хмарного контакт-центру від впровадженого рішення?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text В хмарі Ви користуєтесь повнофункціональним рішенням VoIPTime Contact Center SaaS.<br>У випадку придбання Ви обираєте одну із трьох версій із потрібним функціоналом
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Як розраховуються ліцензії користувача?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Для підрахунку кількості потрібних ліцензій користувача додайте кількість операторів, супервізорів та менеджерів, які будуть одночасно працювати із рішенням VoIPTime Contact Center. Наприклад, на зміні працюють 10 операторів, 1 супервізор та 1 менеджер. Отже, Вам необхідні 12 ліцензій користувача для роботи з нашим рішенням.
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Як замовити додаткові ліцензії користувача / зменшити кількість ліцензій, якщо я працюю в хмарі?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Для замовлення додаткових ліцензій зверніться, будь-ласка, на пошту info@voiptime.net або на пошту виділеного Вам менеджера та вкажіть кількість потрібних ліцензій та бажану дату їх активації. Ми активуємо їх за 20 хвилин.
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Що потрібно мені, щоб розпочати роботу з VoIPTime SaaS?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Вам необхідні лише комп’ютер із будь-якою операційною системою та веб браузером Firefox, гарнітура, апаратний чи програмний SIP-телефон. Для початку роботи з системою VoIPTime Contact Center відкрийте на своєму робочому комп’ютері веб браузер, та вкажіть URL до свого корпоративного сервера контакт центру. У поля Логін та Пароль введіть свій логін та пароль, наданий Вам нашою службою підтримки.
+
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Чи проведете Ви навчання роботі з програмою?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Ми проводимо безкоштовне стартове навчання роботі з VoIPTime Contact Center, а також надаємо детальну інструкцію по роботі з програмою. Якщо у Вас виникають запитання під час роботи з програмою в подальшому, звертайтесь у службу технічної підтримки. Ми Вам обов’язково допоможемо.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Наскільки швидко я зможу почати користуватись хмарою?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Стартове налаштування VoIPTime SaaS під Ваші потреби займає максимум  2 дні, після чого Ви зможете розпочати роботу.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Чи зможу я збільшити кількість користувачів?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Так, для збільшення кількості користувачів, які будуть працювати із VoIPTime SaaS, зверніться до нас. Розширення кількості ліцензій відбувається за 15 хвилин після Вашого звернення.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Які роботи виконуються під час стартового налаштування?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text У перелік робіт, які ми виконуємо для запуску VoIPTime SaaS входить:
+                    ul
+                     li налаштування контакт-центру,
+                     li заведення у програму телефонних ліній клієнта,
+                     li налаштування вхідної та вихідної ліній,
+                     li створення користувачів,
+                     li надання користувачам доступу по IP або VPN,
+                     li налаштування динамічної маршрутизації за потреби,
+                     li створення необхідної кількості внутрішніх номерів для співробітників,
+                     li стартове навчання і ознайомлення з функціоналом.
+
+
+            h3.faq-list__item.faq-list-item.faq-list-item__category Придбання
+            .category-wrapper
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Не можу сам обрати потрібну версію рішення VoIPTime Contact Center.
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  p.faq-list-item-answer__text Опишіть будь-ласка, Ваші потреби, які саме задачі мають виконуватись, і ми допоможемо Вам підібрати оптимальний варіант. Зв’язатись із нами Ви можете будь-яким зручним способом: по телефону, веб-чату, пошті.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text.faq-list-item-question-text_long-text Чи можу я отримати від Вас консультацію для вибору серверного та телекомунікаційного обладнання для свого контакт-центру?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Ми готові надати професійні консультації та підібрати для Вас оптимальне серверне та телекомунікаційне обладнання. Під час підбору будуть враховані не тільки поточне навантаження, але і заплановане розширення контакт-центру. Тому у випадку зростання кількості операторів Вам не доведеться відразу ж купляти нове обладнання.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Чи потрібно мені купляти ліценізії на VoIPTime Contact Center щорічно?
+
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Ви сплачуєте за ліцензії рішення один раз. Тому придбання VoIPTime Contact Center є разовою інвестицією у Ваш бізнес.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Чи зможу я самостійно встановити рішення VoIPTime Contact Center на свій сервер?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Вам не потрібно встановлювати рішення VoIPTime Contact Center на сервері самостійно. Наші технічні спеціалісти налаштують рішення згідно Ваших потреб, встановлять його на Вашому обладнанні, та протестують. Ви зможете запустити роботу власного контакт-центру без жодних труднощів.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Чи потрібно встановлювати VoIPTime Contact Center на кожному комп’ютері користувача?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Рішення VoIPTime Contact Center є повністю web-орієнтованим і не потребує встановлення на кожному робочому місці. Доступ до рішення здійснюється по URL та створеним для Вас логінам та паролям.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Чи надається технічна підтримка? Безкоштовно чи платно?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Ми надаємо якісну технічну підтримку у режимі 12/5 або 24/7 та постійно супроводжуємо наших клієнтів. Якщо у вас виникають запитання по роботі із нашим програмним рішенням, звертайтесь, ми із радістю вам допоможемо. Ви можете укласти із нами договір на обслуговування або оплачувати кожне звернення.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Не вистачає потрібної мені функції у вашому рішенні.
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Зверніться до нас, опишіть який саме функціонал Вам потрібен, і ми оцінимо терміни та вартість його доробки для Вас.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Чи має ваша система API?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Система VoIPTime Contact Center має розроблений API-інтерфейс, який дозволяє провести повноцінну двосторонню інтеграцію із Вашою бізнес-системою.
+
+            h3.faq-list__item.faq-list-item.faq-list-item__category Контакт-центр під ключ
+            .category-wrapper
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Які послуги можуть надаватись Вами під час створення Контакт-центру під ключ?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Послуга може включати в себе наступний перелік:
+                    ul
+                      li консультації з планування простору (серверної, залів контакт-центру, розміщення кабінок операторів);
+                      li допомогу у виборі необхідного обладнання (за потреби і поставку);
+                      li побудову інфраструктури і робочого простору для функціонування контакт-центру;
+                      li кондиціонування;
+                      li кабелювання та СКС;
+                      li електрична мережа та безвыдмовне живлення;
+                      li налаштування телефонії та локальної мережі;
+                      li встановлення та налаштування обладнання;
+                      li встановлення та налаштування програмного рішення VoIPTime Contact Center (для ефективної роботи з клієнтами і базами даних);
+                      li інсталяція робочих місць, гарнітур та ПК;
+                      li стартове навчання персоналу роботі з програмою;
+                      li за потреби – навчання супервізорів специфіці роботи у контакт-центрі;
+                      li подальшу технічну підтримку і консультування в обсязі згідно укладеного договору;
+                      li будь-які додаткові послуги, які Вам необхідні.
+
+                  .faq-list-item-answer__text На виході Ви отримуєте повністю обладнаний і налаштований під Ваші потреби контакт-центр, готовий до виконання поставлених перед ним задач.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Назвіть будь-ласка середню вартість Вашої послуги контакт-центр під ключ?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Вартість послуги Контакт-центр під ключ розраховується індивідуально під кожен запит, адже залежить від переліку потрібних послуг, наявності в замовника серверного та телекомунікаційного обладнання, необхідної версії рішення VoIPTime Contact Center та кількості ліцензій користувача тощо.
+                  .faq-list-item-answer__text Для розрахунку вартості послуги саме для Вас надішліть нам будь-ласка ТЗ із детальним описом потрібних послуг, ми Вас проконсультуємо та розробимо комерційну пропозицію.
+
+
+            h3.faq-list__item.faq-list-item.faq-list-item__category Демо
+            .category-wrapper
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Наявність демоверсії. Чи існує обмеження функціоналу чи тривалості використання?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Демоверсія не обмежена по тривалості використання. Єдиним обмеженням є неможливість здійснювати зовнішні дзвінки, у демоверсії йде емуляція дзвінків абонентам. Для отримання доступу до демоверсії заповніть, будь-ласка, форму. Ви зможете безкоштовно ознайомитись із функціоналом нашого програмного рішення.
+
+
+              //-Item
+              .faq-list__item.faq-list-item
+                //-visible
+                .faq-list-item__question.faq-list-item-question.faq-list-item__question_cursor-pointer
+                  .faq-list-item-question-icon ?
+                  .faq-list-item-question-text Як отримати доступ до демо?
+                //-invisible
+                .faq-list-item__answer.faq-list-item-answer.faq-list-item__answer_invisible
+                  .faq-list-item-answer__text Для отримання доступу до демоверсії заповніть, будь-ласка, форму. Наші менеджери надішлють Вам логін та пароль для доступу.
+

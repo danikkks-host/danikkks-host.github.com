@@ -1,0 +1,44 @@
+mixin contacts(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .content.contacts
+    //-PAGE TITLE
+    section.contacts__page-title
+      .container
+        .row
+          .col-md-24
+            h1.contacts__page-title-text Якщо у Вас виникли запитання, звертайтесь,
+              | будемо<br> раді Вам допомогти!
+    section.contacts__title
+      .container
+        .row
+          .col-md-24
+            h2.contacts__title-text Контакти
+    section.contacts__map
+      #map
+      .contacts__map-background.cf
+      .container.height-normal.height-0
+        .row.height-normal.height-0
+          .col-md-20.col-md-offset-2.cf.height-normal.height-0
+
+            .map-form.map-form_transition-normal.cf
+              .map-circle
+              .map-form__left
+                h3.map-form__label Адреса:
+                p.map-form__text-line Україна, Львів, 79015, вул.
+                p.map-form__text-line Смаль-Стоцького, 1
+                p.map-form__text-line Тел: &#32;
+                  span.map-form__text-line_color +38 (044) 490 77 70
+                p.map-form__text-line Email: info@voiptime.net
+              .map-form__right
+                .form-row.cf
+                  label.map-form__input-label.map-form__input-label_name Ім'я:
+                  input(type="text").map-form__input.map-form__input_name
+                .form-row.cf
+                  label.map-form__input-label.map-form__input-label_email Email:
+                  input(type="text").map-form__input.map-form__input_email
+                .form-row.cf
+                  label.map-form__input-label.map-form__input-label_phone Телефон:
+                  input(type="text").map-form__input.map-form__input_phone
+                .button-flat.button-flat_green.button-flat_map-form Відправити

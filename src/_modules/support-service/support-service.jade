@@ -1,0 +1,134 @@
+mixin support-service(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  // ========[FEATURES BEGIN]========
+  .content.features
+    //-PAGE TITLE
+    section.features-page-title
+      .container
+        .row
+          .col-md-24
+            h1.features-page-title__text Професійне рішення, яке дозволить Вам автоматизувати роботу із клієнтами!
+          .col-md-6.col-md-offset-3
+            .features-page-title__client.features-page-title__client_idea-bank.features-page-title__client_background
+          .col-md-6
+            .features-page-title__client.features-page-title__client_border.features-page-title__client_finline
+          .col-md-6
+            .features-page-title__client.features-page-title__client_idea-bank.features-page-title__client_background
+
+
+    section.features-counters
+      .container
+        .row
+          .col-sm-12.col-md-7
+            h3.features-counters__counter 123 600 000
+            h3.features-counters__explanation Хвилин розмов у контакт-центрі
+          .col-sm-12.col-md-6.col-md-offset-1
+            h3.features-counters__counter 300
+            h3.features-counters__explanation Операторiв гарантованно працють одночасно
+          .col-sm-12.col-md-5.col-md-offset-1
+            h3.features-counters__counter 99.9%
+            h3.features-counters__explanation Часу безперебiйноi роботи
+          .col-sm-12.col-md-3.col-md-offset-1
+            h3.features-counters__counter 24/7
+            h3.features-counters__explanation Підтримка клієнтів
+
+
+    section.feature-block.feature-block_gray
+      .container
+        .row
+          .col-md-13
+            h2.feature-block__title Інтеграція із будь-якими CRM-системами та HelpDesk
+            p.feature-block__description Переглядайте інформацію із картки клієнта Вашої CRM-системи безпосередньо у системі контакт-центру. Отримуйте та надсилайте будь-які дані із Вашої CRM-системи до системи контакт-центру завдяки відкритому API-інтерфейсу VoIPTime. Швидко реєструйте звернення у HelpDesk під час розмови із клієнтом та повідомляйте йому актуальний статус звернення.
+              | Ваш оператор завжди володіє найповнішою інформацією щодо кожного клієнта.
+          .col-md-11
+            img.feature-block__image.feature-block__image_float-right(src="images/support-service/screenshot11.png")
+
+
+
+    section.feature-block.feature-block_white
+      .container
+        .row
+          .col-md-13
+            h2.feature-block__title Інтеграція із сайтом
+            p.feature-block__description.feature-block__description_justify Замініть десятки програм на одне професійне рішення для контакт-центру та автоматизуйте обробку всіх звернень із сайту. Миттєво передзвонюйте відвідувачу сайту після отримання запиту на зворотній дзвінок. Автоматично з’єднуйтесь із клієнтом для уточнення деталей запиту з форми на сайті. Жоден запит не залишиться необробленим!
+          .col-md-11
+            img.feature-block__image.feature-block__image_float-right(src="images/support-service/screenshot2.png")
+
+
+
+
+    section.feature-block.feature-block_gray
+      .container
+        .row
+          .col-md-11
+            img.feature-block__image(src="images/support-service/screenshot3.png")
+          .col-md-13
+            .tekst-danikkks
+              h2.feature-block__title Онлайн-моніторинг та детальна статистика
+              p.feature-block__description Відслідковуйте роботу операторів у режимі реального часу, отримуйте найсвіжішу статистику щодо всіх звернень, а також зведену статистику за добу. Контролюйте навантаження операторів. Аналізуйте будь-які параметри роботи контакт-центру на основі детальних статистичних звітів.
+
+    section.feature-block.feature-block_white.feature-block_border-bottom
+      .container
+        .row
+          .col-md-11
+            img.feature-block__image(src="images/support-service/screenshot4.png")
+          .col-md-13
+            h2.feature-block__title Просте створення сценаріїв
+            p.feature-block__description.feature-block__description_justify Гнучко налаштовуйте сценарії розмови під будь-які потреби завдяки зручному конструктору. Змінені Вами сценарії відразу ж стають доступними операторам, які обробляють дзвінки та веб-чати. Використовуйте опитувальники, бази знань, пропозиції для підвищення якості роботи оператора. Зменшуйте втрати часу оператора на пошук інформації за рахунок відображення веб-сторінки або ж веб-інтерфейс Вашої CRM-системи як одного із блоків сценарію.
+
+    section.feature-block.feature-block_white
+      .container
+        .row
+          .col-md-22.col-md-offset-1
+            h2.feature-block__question Що ще є у нашому програмному забезпеченні?
+          .col-md-14.col-md-offset-5
+            p.feature-block__answer В нашому програмному забезпеченні втілені 84 можливості, які вирішують будь-яку задачу.
+        .row
+          //row 1
+          .col-md-6.col-sm-12.col-md-offset-3
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_1
+              p.possibilities__label IVR
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_2
+              p.possibilities__label Web СallBack
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_3
+              p.possibilities__label Web-Chat
+
+          //row 2
+          .col-md-6.col-sm-12.col-md-offset-3
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_4
+              p.possibilities__label Automatic calls
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_5
+              p.possibilities__label SMS sending
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_6
+              p.possibilities__label Blacklist
+        .row
+          .col-md-10.col-md-offset-7
+            p.green-button.green-button_feature-block
+              a.green-button__link(href="#") Дивитися всi можливостi
+
+
+
+    section.feature-block.feature-block_application.feature-block_background-application
+      .container
+        .row
+          h2.application__title.col-md-24 Зверніться за консультацією
+        .row
+          p.application__description.col-md-10 Опишіть Ваші потреби, і
+            | ми запропонуємо Вам їх ідеальне вирішення!
+        .row
+          .col-md-10
+            a.big-button Залишити заявку
+
+  // ---------[FEATURES END]---------

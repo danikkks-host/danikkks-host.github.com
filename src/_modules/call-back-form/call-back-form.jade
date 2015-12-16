@@ -1,0 +1,45 @@
+mixin call-back-form(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .dark-background
+  .call-back-form
+    .call-back-form__tabs
+      .call-back-form__tab
+        .call-back-form__tab-icon.icon-1.call-back-form__tab-icon_big
+      .call-back-form__tab
+        .call-back-form__tab-icon.icon-2
+      .call-back-form__tab
+        .call-back-form__tab-icon.icon-3
+    .call-back-form__tabs-content
+      h2.call-back-form__title Перезвонить вам?
+      p.call-back-form__description Но в выбранное время я сам инициирую звонок между вами.
+      form
+        input.call-back-form__com-input(type="text" placeholder="Введіть ваш email")
+        input.call-back-form__com-input(type="tel" placeholder="Введіть ваш номер телефону")
+        .call-back-form__check-row
+          input#call-now.call-back-form__check(type="checkbox" name="call-now" checked style="outline: 0;")
+          label.call-back-form__check-label(for="call-now") Передзвонити зараз
+
+        .call-back-form__set-time.call-back-form__set-time_closed
+          select.call-back-form__time-to-call
+            option Сьогодні
+            option Завтра
+            option На тижні
+
+          select.call-back-form__time-to-call.call-back-form__time-to-call_right
+            option(value="9") 9:00 год.
+            option(value="10") 10:00 год.
+            option(value="11") 11:00 год.
+            option(value="12") 12:00 год.
+            option(value="13") 13:00 год.
+            option(value="14") 14:00 год.
+            option(value="15") 15:00 год.
+            option(value="16") 16:00 год.
+            option(value="17") 17:00 год.
+            option(value="18") 18:00 год.
+
+        .call-back-form__set-time-timer
+          .your-clock
+
+        input.call-back-form__submit-button(type="button" value="Відправити запит")

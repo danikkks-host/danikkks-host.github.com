@@ -1,0 +1,155 @@
+mixin prices(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  // ========[SUPPORT BEGIN]========
+  .content.blog-article
+    //-PAGE TITLE
+    section.blog__page-title.blog__page-title_prices
+      h1.blog__page-title-text Зручнi цiни для швидкого старту
+
+    section
+      .container
+        .row
+          //table column
+          .col-md-6
+            .table-column.cf
+              h3.table-column__label SaaS
+              .table-column__content.cf
+                .table-column__content-row.cf
+                  p.table-column__price $0,99
+                  p.table-column__price_description за оператора / день
+                .table-column__content-row.table-column__content-row_blue.cf
+                  .table-column_instruction Щомісячна абонплата + плата за запуск хмари
+                  p.green-button.green-button_prices
+                    a.green-button__link(href="#") Замовити
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include 5 годин підтримки на місяць
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Ф
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Оплата тільки за ліцензії
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Навчання персоналу
+          //table column
+          .col-md-6
+            .table-column.cf
+              h3.table-column__label Inbound
+              .table-column__content.cf
+                .table-column__content-row.cf
+                  p.table-column__price $40
+                  p.table-column__price_description за оператора / рік
+                .table-column__content-row.table-column__content-row_blue.cf
+                  .table-column_instruction Оплачується за рік + ліцензія серверу
+                  p.green-button.green-button_prices
+                    a.green-button__link(href="#") Замовити
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include 30 годин підтримки на місяць
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Консультації з вибору обладнання
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Впровадження на вашому обладнанні
+                .table-column__content-row.cf
+                  p.table-column__what-include Навчання персоналу
+          //table column
+          .col-md-6
+            .table-column.cf
+              h3.table-column__label outbound
+              .table-column__content.cf
+                .table-column__content-row.cf
+                  p.table-column__price $115
+                  p.table-column__price_description за оператора / рік
+                .table-column__content-row.table-column__content-row_blue.cf
+                  .table-column_instruction Оплачується за рік + ліцензія серверу
+                  p.green-button.green-button_prices
+                    a.green-button__link(href="#") Замовити
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include 30 годин підтримки на місяць
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Консультації з вибору обладнання
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Обучение операторов
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Впровадження на вашому обладнанні
+                .table-column__content-row.cf
+                  p.table-column__what-include Навчання персоналу
+          //table column
+          .col-md-6
+            .table-column.cf
+              h3.table-column__label MULTICHANNEL
+              .table-column__content.cf
+                .table-column__content-row.cf
+                  p.table-column__price $190
+                  p.table-column__price_description за оператора / рік
+                .table-column__content-row.table-column__content-row_blue.cf
+                  .table-column_instruction Оплачується за рік + ліцензія серверу
+                  p.green-button.green-button_prices
+                    a.green-button__link(href="#") Замовити
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include 24/7 підтримка за додаткові $800/місяць
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Консультації з вибору обладнання
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Обучение операторов
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Обучение операторов
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Впровадження на вашому обладнанні
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Навчання персоналу
+                .table-column__content-row.table-column__content-row_border-bottom.cf
+                  p.table-column__what-include Підвищена відмовостійкість
+                .table-column__content-row.cf
+                  p.table-column__what-include Автоматичне резервування
+        .row
+          .col-md-10.col-md-offset-7
+            p.green-button
+              a.green-button__link(href="#") Запишіться на демо презентацію
+        .row
+          .col-md-10.col-md-offset-7
+            p.blue-underline-link
+              a(href="/compare.html").blue-underline-link__link Можливе придбання річних ліцензій на потрібну кількість операторів, або постійних ліцензій назавжди. Вартість постійних ліцензій наведена тут
+
+    section.gray-section
+      .container
+        .row
+          .col-md-24
+            .common-question
+              h3.common-question__label Распространненые вопросы
+        .row
+          .col-md-8
+            .common-question__column
+              p.common-question__column-label Демоверсия
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+          .col-md-8
+            .common-question__column
+              p.common-question__column-label Приобретение Voiptime
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+          .col-md-8
+            .common-question__column
+              p.common-question__column-label Использование Voiptime
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.
+              .common-question__column-question Использование Voiptime
+                .common-question__column-question-button
+                .common-question__column-answer.display-none Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать.

@@ -1,0 +1,325 @@
+// Normalize Styles
+@import node_modules/normalize.css/normalize
+@import node_modules/bootstrap/bootstrap.min
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic-ext,cyrillic)
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,cyrillic)
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+html
+  font-size: 62.5%
+body
+  font-family: 'Open Sans', sans-serif
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+  font-size: 1.5em
+  min-width: 250px
+
+
+
+a:hover
+  color: white
+a:visited
+  text-decoration: none
+a:focus
+  text-decoration: none
+
+.container-fluid
+  max-width: 1200px
+.hidden-overflow
+  overflow: hidden
+
+section
+  h2
+    font-family: 'Open Sans', sans-serif
+    font-size: 36px
+    font-weight: 700
+    line-height: 24px
+
+
+// Styling on warning for users on IE7 or below
+.browsehappy
+  text-align: center
+  margin: 0
+  background: #fff8e2
+  color: #000
+  padding: 0.5em 0
+
+.z-index-10
+  z-index: 10
+
+.display-none
+  display: none !important
+
+.height-0
+  height: 0
+
+//bx slider
+.bxslider
+  width: 100%
+  position: relative
+
+
+.slider-wrapper
+  padding-top: 65px
+
+#bx-pager
+  position: absolute
+  top: 111px
+#bx-pager
+  .active
+    .bx-slider-thumbnail__background
+      background: #0BD77D
+
+
+
+//bxslider
+.bx-next,.bx-prev
+  height: 14px
+  position: absolute
+  top: 53%
+  width: 9px
+  background-repeat: no-repeat
+  display: block
+  padding: 13px
+  border: 3px solid #202a37
+  border-radius: 50%
+  background-position: center
+  z-index: 50
+
+.bx-next
+  right: 0
+  background-image: url(../images/index2/slider-controll.png)
+  &:hover
+    background-image: url(../images/index2/slider-controll-hover.png)
+    border-color: #83c532
+
+.bx-prev
+  left: -20px
+  background-image: url(../images/index2/slider-controll.png)
+  transform: rotate(180deg)
+  &:hover
+    background-image: url(../images/index2/slider-controll-hover.png)
+    border-color: #83c532
+
+.bx-slider-thumbnail
+  border-radius: 50%
+  z-index: 50
+  height: 87px
+  width: 87px
+  position: relative
+  box-shadow: 0px 0px 0px 3px rgba(70,70,70,.1)
+  margin: 3px
+  margin-bottom: 17px
+  &:hover
+    .bx-slider-thumbnail__background
+      background: #0BD77D
+
+
+
+.bx-slider-thumbnail__icon
+  content: ""
+  z-index: 3
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-repeat: no-repeat
+  background-position: center
+  border-radius: 50%
+
+.active
+  color: red
+  .index-block-slider__description-title
+    color: red
+
+.bx-slider-thumbnail__background
+  content: ""
+  z-index: 1
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  border-radius: 50%
+  background: #0BD77D
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(117,190,220,1) 0%, rgba(95,173,210,1) 100%)
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(117,190,220,1)), color-stop(100%,rgba(95,173,210,1)))
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(117,190,220,1) 0%,rgba(95,173,210,1) 100%)
+  background: -o-radial-gradient(center, ellipse cover,  rgba(117,190,220,1) 0%,rgba(95,173,210,1) 100%)
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(117,190,220,1) 0%,rgba(95,173,210,1) 100%)
+  background: radial-gradient(ellipse at center,  rgba(117,190,220,1) 0%,rgba(95,173,210,1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75bedc', endColorstr='#5fadd2',GradientType=1 )
+
+.bx-slider-thumbnail__1
+  background-image: url(../images/index2/slider1-th.png)
+.bx-slider-thumbnail__2
+  background-image: url(../images/index2/slider2-th.png)
+.bx-slider-thumbnail__3
+  background-image: url(../images/index2/slider3-th.png)
+.bx-slider-thumbnail__4
+  background-image: url(../images/index2/slider4-th.png)
+
+
+.height-normal
+  height: 0
+
+section
+ h2
+  text-align: center
+
+//clearfix
+.cf
+  &:before
+    content: " "
+    display: table
+  &:after
+    content: " "
+    display: table
+    clear: both
+  *zoom: 1
+
+//bootstrap vertical align
+@media (min-width: 992px)
+  .row-md-flex-center
+    display: flex
+    align-items: center
+
+@media (min-width: 1200px)
+  .row-lg-flex-center
+    display: flex
+    align-items: center
+
+@font-face
+  font-family: 'Myriad Pro Regular'
+  font-style: normal
+  font-weight: normal
+  src: local("Myriad Pro Regular"), url('../fonts/MYRIADPRO-REGULAR.woff') format("woff")
+
+
+@font-face
+  font-family: 'Myriad Pro Condensed'
+  font-style: normal
+  font-weight: normal
+  src: local("Myriad Pro Condensed"), url('../fonts/MYRIADPRO-COND.woff') format("woff")
+
+
+@font-face
+  font-family: 'Myriad Pro Semibold Italic'
+  font-style: normal
+  font-weight: normal
+  src: local("Myriad Pro Semibold Italic"), url('../fonts/MYRIADPRO-SEMIBOLDIT.woff') format("woff")
+
+
+@font-face
+  font-family: 'Myriad Pro Semibold'
+  font-style: normal
+  font-weight: normal
+  src: local("Myriad Pro Semibold"), url('../fonts/MYRIADPRO-SEMIBOLD.woff') format("woff")
+
+
+@font-face
+  font-family: 'Myriad Pro Condensed Italic'
+  font-style: normal
+  font-weight: normal
+  src: local("Myriad Pro Condensed Italic"), url('../fonts/MYRIADPRO-CONDIT.woff') format("woff")
+
+
+@font-face
+  font-family: 'Myriad Pro Bold Italic'
+  font-style: normal
+  font-weight: normal
+  src: local("Myriad Pro Bold Italic"), url('../fonts/MYRIADPRO-BOLDIT.woff') format("woff")
+
+
+@font-face
+  font-family: 'Myriad Pro Bold Condensed Italic'
+  font-style: normal
+  font-weight: normal
+  src: local("Myriad Pro Bold Condensed Italic"), url('../fonts/MYRIADPRO-BOLDCONDIT.woff') format("woff")
+
+
+@font-face
+  font-family: 'Myriad Pro Bold Condensed'
+  font-style: normal
+  font-weight: normal
+  src: local("Myriad Pro Bold Condensed"), url('../fonts/MYRIADPRO-BOLDCOND.woff') format("woff")
+
+
+@font-face
+  font-family: 'Myriad Pro Bold'
+  font-style: normal
+  font-weight: normal
+  src: local("Myriad Pro Bold"), url('../fonts/MYRIADPRO-BOLD.woff') format("woff")
+
+@font-face
+  font-family: 'news706'
+  src: url('../fonts/news706-bt-bold-webfont.eot')
+  src: url('../fonts/news706-bt-bold-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/news706-bt-bold-webfont.woff2') format("woff2"), url('../fonts/news706-bt-bold-webfont.woff') format("woff"), url('../fonts/news706-bt-bold-webfont.ttf') format("truetype"), url('../fonts/news706-bt-bold-webfont.svg#news706_btbold') format("svg")
+  font-weight: normal
+  font-style: normal
+
+//svg fonts
+@font-face
+  font-family: 'icomoon'
+  src: url('../fonts/icons/icomoon.eot?f179m0')
+  src: url('../fonts/icons/icomoon.eot?f179m0#iefix') format("embedded-opentype"),
+  url('../fonts/icons/icomoon.ttf?f179m0') format("truetype"),
+  url('../fonts/icons/icomoon.woff?f179m0') format("woff"),
+  url('../fonts/icons/icomoon.svg?f179m0#icomoon') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+[class^="icon-"], [class*=" icon-"]
+  font-family: 'icomoon'
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.icon-1:before
+  content: "\e900"
+
+.icon-2:before
+  content: "\e901"
+
+.icon-3:before
+  content: "\e902"
+
+// Import Modules
+@import ../_modules/link/link
+@import ../_modules/navbar/navbar
+@import ../_modules/navbar-second/navbar-second
+@import ../_modules/footer/footer
+@import ../_modules/index/index
+@import ../_modules/index2/index2.sass
+@import ../_modules/faq/faq
+@import ../_modules/blog/blog
+@import ../_modules/functionality/functionality
+@import ../_modules/contacts/contacts
+@import ../_modules/description/description
+@import ../_modules/blog-article/blog-article
+@import ../_modules/features/features
+@import ../_modules/prices/prices
+@import ../_modules/compare/compare
+@import ../_modules/cloud/cloud
+@import ../_modules/sale/sale
+@import ../_modules/support-service/support-service
+@import ../_modules/float-phone/float-phone
+@import ../_modules/float-consultation/float-consultation
+@import ../_modules/send-status/send-status
+@import ../_modules/call-back-form/call-back-form

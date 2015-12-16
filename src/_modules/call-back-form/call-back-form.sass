@@ -1,0 +1,244 @@
+// call-back-form styles
+/* ========================================[ CALLBACK FORM BLOCK ]======================================== */
+.call-back-form
+  position: absolute
+  z-index: 99
+  top: 1000px
+  left: 100px
+
+
+/* ===callback form elements=== */
+.call-back-form__tabs
+  display: inline-block
+  float: left
+
+
+  width: 81px
+
+
+.dark-background
+  position: fixed
+  z-index: 80
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+
+  background-color: rgba(64, 80, 97, .81)
+
+.call-back-form__tabs-content
+  position: relative
+
+
+  display: inline-block
+  float: left
+
+
+  width: 333px
+  height: 508px
+  padding: 29px
+
+
+  border-radius: 4px
+  background-color: #fff
+
+.call-back-form__tab
+  position: relative
+
+
+  display: flex
+
+
+  box-sizing: content-box
+  width: 41px
+  height: 41px
+  margin-top: 6px
+  margin-bottom: 30px
+
+
+  border: 4px solid #3c6272
+  border-radius: 50%
+  background-color: #39596b
+  box-shadow: 0 0 0 6px rgba(0, 224, 225, .1)
+
+
+  align-items: center
+  justify-content: center
+  &::before
+    position: absolute
+    top: 50%
+    left: calc(100%  + 11px)
+
+
+    width: 23px
+    height: 0
+
+
+    content: ''
+
+
+    border-bottom: 1px dotted #0bd77d
+  &::after
+    position: absolute
+    top: calc(100% + 11px)
+    left: 50%
+
+
+    width: 0
+    height: 16px
+
+
+    content: ''
+
+
+    border-left: 1px dotted #0bd77d
+  &:last-child
+    &::after
+      content: none
+  &:hover
+    cursor: pointer
+
+
+    background-color: rgb(11,215,125)
+    .call-back-form__tab-icon
+      color: #fff
+
+.call-back-form__tab-icon
+  color: #0bd77d
+  &:hover
+    color: #fff
+
+
+.call-back-form__title
+  font-size: 24px
+  font-weight: 300
+  line-height: 24px
+
+
+  margin-top: 0
+
+
+  text-align: center
+
+
+  color: #49535c
+
+.call-back-form__description
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+
+
+  text-align: center
+
+
+  color: #49535c
+
+.call-back-form__submit-button
+  font-size: 24px
+  font-weight: 300
+  line-height: 24px
+
+
+  position: absolute
+  bottom: 29px
+  left: 29px
+
+
+  width: calc( 100% - 29px * 2 )
+  padding: 20px 33px
+
+
+  text-align: center
+
+
+  color: #fff
+  border: none
+  border-radius: 6px
+  outline: 0
+  background-color: #0bd77d
+  &:hover
+    background-color: #00d9e4
+
+.call-back-form__com-input
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+
+  width: 100%
+  height: 40px
+  margin-bottom: 23px
+  padding: 0 18px
+
+  text-align: left
+
+  color: #364049
+  border: none
+  border-radius: 6px
+  outline: 0
+  background-color: #d8dadd
+  &::-webkit-input-placeholder
+    color: #364049
+  &:-moz-placeholder
+    color: #364049
+  &:-ms-input-placeholder
+    color: #364049
+  &::-moz-placeholder
+    color: #364049
+
+.call-back-form__check-label
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+
+  text-align: left
+
+  color: #364049
+
+.call-back-form__check-row
+  margin-bottom: 23px
+
+.call-back-form__time-to-call
+  font-size: 14px
+  font-weight: 300
+
+  display: inline-block
+  float: left
+
+  width: 48%
+  height: 40px
+  padding: 0 18px 0
+
+  color: #364049
+  border: none
+  border-radius: 6px
+  outline: 0
+  background-color: #d8dadd
+  background-image: url(../images/common/dropdown-arrows.png)
+  background-repeat: no-repeat
+  background-position: right
+  -moz-appearance: none
+  -webkit-appearance: none
+
+.call-back-form__set-timemax-width
+  transform: scaleY(1)
+  transition: transform .5s
+/* ===callback form modifiers=== */
+.call-back-form__tab-icon_big
+  font-size: 23px
+
+.call-back-form__time-to-call_right
+  float: right
+
+.call-back-form__set-time_closed
+  transform: scaleY(0)
+  transition: transform 0s
+  overflow: hidden
+
+/* ===================[ CALLBACK FORM END ]=================== */
+
+
+
+
+

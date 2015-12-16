@@ -1,0 +1,203 @@
+mixin sale(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  section.video
+    .container
+      .row
+        .col-md-10.col-md-offset-7.ten-block
+            p.reasons <span>10</span> причин створити контакт-центр<br> на Voiptime
+            .video__play-button
+            p.green-button.green-button_light
+              a.green-button__link(href="#") Замовити
+  .modal-video.display-none
+    .modal-video__close x
+
+
+  section.what-we-do.what-we-do_dotted-background
+    .container
+      .row
+        .col-md-24
+          h2.what-we-do__title Можливостi Voiptime
+      .row
+
+        .col-md-6.col-md-offset-2
+          a(href="/sale.html").what-we-do__circle.what-we-do__circle-background-orange.what-we-do__circle_small
+            .what-we-do__circle-icon.what-we-do__circle-icon_circle4.what-we-do__circle-icon_small
+          a(href="/sale.html")
+            p.what-we-do__text Створення контакт центрiв
+              span.what-we-do__text_bold &#32; будь-якого &#32;
+              | розміру
+
+        .col-md-6.col-md-offset-1
+          a(href="/cloud.html").what-we-do__circle.what-we-do__circle-background-orange.what-we-do__circle_small
+            .what-we-do__circle-icon.what-we-do__circle-icon_circle5.what-we-do__circle-icon_small
+          a(href="/cloud.html")
+            p.what-we-do__text Спiлкування з клієнтами за допомогою
+              span.what-we-do__text_bold &#32; дзвiнкiв email, sms, web-chat
+
+        .col-md-6.col-md-offset-1
+          a(href="/key.html").what-we-do__circle.what-we-do__circle-background-orange.what-we-do__circle_small
+            .what-we-do__circle-icon.what-we-do__circle-icon_circle6.what-we-do__circle-icon_very-small
+          a(href="/key.html")
+            p.what-we-do__text Зменшення часу на обдзвiн до
+              span.what-we-do__text_bold &#32; 5 - 10
+              | разiв
+      .row
+
+        .col-md-6.col-md-offset-5
+          a(href="/sale.html").what-we-do__circle.what-we-do__circle-background-orange.what-we-do__circle_small
+            .what-we-do__circle-icon.what-we-do__circle-icon_circle7.what-we-do__circle-icon_small
+          a(href="/sale.html")
+            p.what-we-do__text Збiльшення навантаження на оператора до
+              span.what-we-do__text_bold &#32; 80 -90%
+
+        .col-md-5.col-md-offset-2
+          a(href="/cloud.html").what-we-do__circle.what-we-do__circle-background-orange.what-we-do__circle_small
+            .what-we-do__circle-icon.what-we-do__circle-icon_circle8.what-we-do__circle-icon_small
+          a(href="/cloud.html")
+            p.what-we-do__text Iнтеграцiя з будьякою вашою CRM:
+              span.what-we-do__text_bold &#32; 1C: Billing
+
+
+  section.feature-block.feature-block_gray
+    .container
+      .row
+        .col-md-13
+          h2.feature-block__title Значна економія
+          p.feature-block__description Ви сплачуєте тільки за потрібну кількість
+            | ліцензій для користувачів контакт-центру.
+            | Вам не потрібно витрачати гроші:
+            | - на обладнання для створення контакт-центру,
+            | - на серверне програмне забезпечення (Microsoft, MySQL, саме програмне рішення для контакт-центру),
+            | - на спеціалістів, що підтримуватимуть роботу контакт-центру,
+            | - на постійне оновлення обладнання, що з часом виходить з ладу.
+
+            Все обладнання знаходиться у нас і повністю обслуговується нашими спеціалістами.
+
+        .col-md-11
+          img.feature-block__image.feature-block__image_float-right(src="images/cloud/0.jpg")
+
+
+  section.feature-block.feature-block_white.feature-block_border-bottom
+    .container
+      .row
+        .col-md-11
+          img.feature-block__image(src="images/cloud/1.jpg")
+        .col-md-13
+          h2.feature-block__title Простота
+          p.feature-block__description.feature-block__description_justify Ви
+            | отримаєте повнофункціональну версію контакт-центру на базі Voiptime.
+            | Ми
+            | не урізаємо функціонал і не обмежуємо можливостей!
+            | До того ж Вам не потрібно перейматися організацією роботи контакт-центру. Ми ж робимо це професійно уже понад 6 років, стикаючись з найрізноманітнішими проблемами. І ми знаємо як їх вирішувати!
+
+
+  section.feature-block.feature-block_blue
+    .container
+      .row
+        .col-md-13
+          h2.feature-block__title.feature-block__title_smaller.feature-block__title_white-text Швидкий старт
+          p.feature-block__description.feature-block__description_justify.feature-block__description_white-text Все, що  Вам потрібно, це наявність комп’ютера (VoIPTime працює на Linux), браузера, гарнітури та інтернету. Запуск хмарного контакт-центру нашими спеціалістами займає максимум 2 дні!
+
+        .col-md-11
+          img.feature-block__image.feature-block__image_float-right(src="images/cloud/2.jpg")
+
+
+  section.feature-block.feature-block_white
+    .container
+      .row
+        .col-md-11
+          img.feature-block__image(src="images/cloud/3.jpg")
+        .col-md-13
+          .tekst-danikkks
+            h2.feature-block__title Віддалений доступ
+            p.feature-block__description Вам не потрібно особисто встановлювати жодне програмне забезпечення на кожне робоче місце, оскільки рішення є повністю WEB-орієнтованим. Контакт-центр налаштовується в хмарному середовищі, а оператори можуть користуватися ним з будь-якого місця, де є інтернет. Ви можете з легкістю організувати контакт-центр і у себе в офісі, або ж спланувати роботу віддалених працівників.
+
+  section.feature-block.feature-block_gray
+    .container
+      .row
+        .col-md-13
+          h2.feature-block__title Надійність і стабільність
+          p.feature-block__description Безперебійна робота Вашого контакт-центру — це наша відповідальність. Ми забезпечуємо роботу хмарних контакт-центрів у режимі 24/7. Вам не потрібно самостійно вирішувати проблеми, навіть якщо вони виникнули б у вихідний день чи вночі.
+
+        .col-md-11
+          img.feature-block__image.feature-block__image_float-right(src="images/cloud/4.jpg")
+
+  section.feature-block.feature-block_white
+    .container
+      .row
+        .col-md-11
+          img.feature-block__image(src="images/cloud/5.jpg")
+        .col-md-13
+          .tekst-danikkks
+            h2.feature-block__title Гнучкість використання
+            p.feature-block__description Ви можете обрати будь-яку кількість користувацьких ліцензій та, за потреби, збільшити чи зменшити їхню кількість на наступний місяць. Також Ви можете повністю відмовитись від послуги у будь-який момент без наслідків для себе.
+
+
+  section.cases
+    .container
+      .row
+        .col-md-24
+          h2.cases__title Кейси
+      .row
+        .col-md-9.col-md-offset-3
+          .cases__block
+            .cases__block-title-row
+              .cases__block-title-icon.cases__block-title-icon_bank
+              .cases__block-title-text Банк
+            .cases__block-row.cases__block-row_bottom-border
+              .cases__block-row-icon.cases__block-row-icon_people
+              p.cases__block-row-text Автоматизовано
+                span.cases__block-row-text_big &#32; 80 &#32;
+                | робочих місць
+            .cases__block-row.cases__block-row_bottom-border
+              .cases__block-row-icon.cases__block-row-icon_people
+              .cases__block-row-text Навантаження операторів зросло до
+                span.cases__block-row-text_big &#32; 80-90%
+            .cases__block-row
+              .cases__block-row-icon.cases__block-row-icon_people
+              .cases__block-row-text Ефективність вихідного обдзвону збільшилась на
+                span.cases__block-row-text_big &#32; 20%
+
+        .col-md-9
+          .cases__block
+            .cases__block-title-row
+              .cases__block-title-icon.cases__block-title-icon_digital
+              .cases__block-title-text Провайдер цифрового телебачення
+            .cases__block-row.cases__block-row_bottom-border
+              .cases__block-row-icon.cases__block-row-24
+              p.cases__block-row-text Відкрито
+                span.cases__block-row-text_big &#32; 3 &#32;
+                | площадки колл-центру
+            .cases__block-row.cases__block-row_bottom-border
+              .cases__block-row-icon.cases__block-row-icon_people
+              .cases__block-row-text Автоматизовано
+                span.cases__block-row-text_big &#32; 120 &#32;
+                | робочих місць
+            .cases__block-row
+              .cases__block-row-icon.cases__block-row-women
+              .cases__block-row-text Зменшено простої операторів
+                span.cases__block-row-text_big &#32; вдвічі
+      .row
+        .col-md-24
+          p.cases__more Ми створюємо контакт-центри для найрізноманітніших сфер бізнесу. Легка адаптація саме під<br> Ваші потреби
+      .row
+        .col-md-24
+          p.cases__link-wrapper
+            a.cases__link(href="#") Всi кейси
+
+
+
+  section.feature-block.feature-block_application.feature-block_background-application
+    .container
+      .row
+        h2.application__title.col-md-24 Зверніться за консультацією
+      .row
+        p.application__description.col-md-10 Опишіть Ваші потреби, і
+          | ми запропонуємо Вам їх ідеальне вирішення!
+      .row
+        .col-md-10
+          a.big-button Залишити заявку
+
+

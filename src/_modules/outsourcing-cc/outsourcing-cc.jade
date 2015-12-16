@@ -1,0 +1,219 @@
+mixin outsourcing-cc(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  // ========[FEATURES BEGIN]========
+  .content.features
+    //-PAGE TITLE
+    section.features-page-title
+      .container
+        .row
+          .col-md-24
+            h1.features-page-title__text Професійне рішення, яке дозволить Вам швидко та успішно виконувати нові проекти!
+          .col-md-6.col-md-offset-3
+            .features-page-title__client.features-page-title__client_idea-bank.features-page-title__client_background
+          .col-md-6
+            .features-page-title__client.features-page-title__client_border.features-page-title__client_finline
+          .col-md-6
+            .features-page-title__client.features-page-title__client_idea-bank.features-page-title__client_background
+
+
+    section.features-counters
+      .container
+        .row
+          .col-sm-12.col-md-7
+            h3.features-counters__counter 123 600 000
+            h3.features-counters__explanation Хвилин розмов у контакт-центрі
+          .col-sm-12.col-md-6.col-md-offset-1
+            h3.features-counters__counter 300
+            h3.features-counters__explanation Операторiв гарантованно працють одночасно
+          .col-sm-12.col-md-5.col-md-offset-1
+            h3.features-counters__counter 99.9%
+            h3.features-counters__explanation Часу безперебiйноi роботи
+          .col-sm-12.col-md-3.col-md-offset-1
+            h3.features-counters__counter 24/7
+            h3.features-counters__explanation Підтримка клієнтів
+
+
+    section.feature-block.feature-block_gray
+      .container
+        .row
+          .col-md-13
+            h2.feature-block__title Інтуїтивно зрозуміле аll-in-one рішення
+            p.feature-block__description Для організації роботи Вашого контакт-центру достатньо одного програмного рішення, яке зручно поєднує увесь необхідний функціонал.
+              | Із VoIPTime Contact Center Ви не тільки автоматизуєте обробку вхідних та вихідних дзвінків, email, web-чатів, проведете персоналізовану SMS-розсилку, але і зможете інтегруватись із сайтом для обробки онлайн-форм та запитів. Вам не потрібно залучати програмістів для налаштування сценаріїв розмов або IVR, формування деталізованих статистичних звітів тощо.
+          .col-md-11
+            img.feature-block__image.feature-block__image_float-right(src="images/support-service/screenshot7.png")
+
+    section.feature-block.feature-block_white
+      .container
+        .row
+          .col-md-13
+            h2.feature-block__title Висока надійність
+            p.feature-block__description.feature-block__description_justify Із нами Ваш контакт-центр зможе працювати у режимі 24/7 роками. Ми не тільки забезпечимо безвідмовну схему, але і повністю обслуговуватимо програмне рішення. Ви зможете зосередитись на власному бізнесі, а не будете перейматись технічними питаннями.
+          .col-md-11
+            img.feature-block__image.feature-block__image_float-right(src="images/features/adaptation.png")
+
+
+
+    section.feature-block.feature-block_gray
+      .container
+        .row
+          .col-md-11
+            img.feature-block__image(src="images/features/analytics.png")
+          .col-md-13
+            .tekst-danikkks
+              h2.feature-block__title Гнучке налаштування вихідних обдзвонів
+              p.feature-block__description Налаштування та запуск телемаркетингів є максимально простим та займає лише 10-15 хвилин. Вам більше не потрібно перейматись через потребу запускати обдзвін кожного дня - налаштуйте автозапуск, і система самостійно буде слідкувати за датою та часом початку та завершення обдзвону. Обирайте необхідний режим обдзвону (Preview, Progressive, Predictive) або запускайте автоматичний обдзвін без участі операторів - у будь-якому випадку клієнтська база буде оброблена швидко та якісно!
+
+    section.feature-block.feature-block_white.feature-block_border-bottom
+      .container
+        .row
+          .col-md-11
+            img.feature-block__image(src="images/support-service/screenshot8.png")
+          .col-md-13
+            h2.feature-block__title Групи операторів
+            p.feature-block__description.feature-block__description_justify Об’єднуйте операторів у групи та призначайте кожній групі по декілька задач. Обробляйте задачі почергово або за пріоритетами. Переглядайте статистику та аналізуйте роботу кожної групи окремо або контакт-центру в цілому.
+
+
+    section.feature-block.feature-block_gray
+      .container
+        .row
+          .col-md-13
+            h2.feature-block__title Гостьові доступи для замовників
+            p.feature-block__description За допомогою гостьових доступів у VoIPTime Contact Center Ваші замовники зможуть прослуховувати записи розмов та бачити статистичні звіти тільки по власному проекту та виділеній групі операторів.
+          .col-md-11
+            img.feature-block__image.feature-block__image_float-right(src="images/support-service/screenshot9.png")
+
+    section.feature-block.feature-block_white
+      .container
+        .row
+          .col-md-13
+            h2.feature-block__title Максимальне навантаження операторів
+            p.feature-block__description.feature-block__description_justify Ефективно обдзвонюйте навіть “холодні” бази у режимі predictive. Система аналізує безліч параметрів та автоматично прискорює набір для забезпечення якнайкращого обдзвону. Оскільки відбувається з’єднання операторів лише із “живими“ абонентами, простої є мінімальними. Навантаження операторів при цьому зростає до 70-80%.
+          .col-md-11
+            img.feature-block__image.feature-block__image_float-right(src="images/support-service/screenshot10.png")
+
+
+
+    section.feature-block.feature-block_gray
+      .container
+        .row
+          .col-md-11
+            img.feature-block__image(src="images/support-service/screenshot3.png")
+          .col-md-13
+            .tekst-danikkks
+              h2.feature-block__title Онлайн-моніторинг та детальна статистика
+              p.feature-block__description Відслідковуйте роботу окремих операторів або груп у режимі реального часу, отримуйте найсвіжішу статистику щодо всіх звернень, а також зведену статистику за добу. Контролюйте навантаження операторів. Аналізуйте будь-які параметри роботи контакт-центру на базі детальних статистичних звітів.
+
+    section.feature-block.feature-block_white.feature-block_border-bottom
+      .container
+        .row
+          .col-md-11
+            img.feature-block__image(src="images/support-service/screenshot4.png")
+          .col-md-13
+            h2.feature-block__title Просте створення сценаріїв
+            p.feature-block__description.feature-block__description_justify Гнучко налаштовуйте сценарії розмови під будь-які потреби завдяки зручному конструктору. Змінені Вами сценарії відразу ж стають доступними операторам. Використовуйте опитувальники, бази знань, пропозиції для підвищення якості роботи оператора. Зменшуйте втрати часу оператора на пошук інформації за рахунок відображення веб-сторінки або ж веб-інтерфейс Вашої CRM-системи як одного із блоків сценарію.
+
+
+
+    section.cases
+      .container
+        .row
+          .col-md-24
+            h2.cases__title Кейси
+        .row
+          .col-md-9.col-md-offset-3
+            .cases__block
+              .cases__block-title-row
+                .cases__block-title-icon.cases__block-title-icon_bank
+                .cases__block-title-text Банк
+              .cases__block-row.cases__block-row_bottom-border
+                .cases__block-row-icon.cases__block-row-icon_people
+                p.cases__block-row-text Автоматизовано
+                  span.cases__block-row-text_big &#32; 80 &#32;
+                  | робочих місць
+              .cases__block-row.cases__block-row_bottom-border
+                .cases__block-row-icon.cases__block-row-icon_people
+                .cases__block-row-text Навантаження операторів зросло до
+                  span.cases__block-row-text_big &#32; 80-90%
+              .cases__block-row
+                .cases__block-row-icon.cases__block-row-icon_people
+                .cases__block-row-text Ефективність вихідного обдзвону збільшилась на
+                  span.cases__block-row-text_big &#32; 20%
+
+          .col-md-9
+            .cases__block
+              .cases__block-title-row
+                .cases__block-title-icon.cases__block-title-icon_digital
+                .cases__block-title-text Провайдер цифрового телебачення
+              .cases__block-row.cases__block-row_bottom-border
+                .cases__block-row-icon.cases__block-row-24
+                p.cases__block-row-text Відкрито
+                  span.cases__block-row-text_big &#32; 3 &#32;
+                  | площадки колл-центру
+              .cases__block-row.cases__block-row_bottom-border
+                .cases__block-row-icon.cases__block-row-icon_people
+                .cases__block-row-text Автоматизовано
+                  span.cases__block-row-text_big &#32; 120 &#32;
+                  | робочих місць
+              .cases__block-row
+                .cases__block-row-icon.cases__block-row-women
+                .cases__block-row-text Зменшено простої операторів
+                  span.cases__block-row-text_big &#32; вдвічі
+
+
+     section.feature-block.feature-block_white
+      .container
+        .row
+          .col-md-22.col-md-offset-1
+            h2.feature-block__question Що ще є у нашому програмному забезпеченні?
+          .col-md-14.col-md-offset-5
+            p.feature-block__answer В нашому програмному забезпеченні втілені 84 можливості, які вирішують будь-яку задачу.
+        .row
+          //row 1
+          .col-md-6.col-sm-12.col-md-offset-3
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_1
+              p.possibilities__label IVR
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_2
+              p.possibilities__label Web СallBack
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_3
+              p.possibilities__label Web-Chat
+
+          //row 2
+          .col-md-6.col-sm-12.col-md-offset-3
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_4
+              p.possibilities__label Automatic calls
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_5
+              p.possibilities__label SMS sending
+          .col-md-6.col-sm-12
+            .possibilities.cf
+              .possibilities__icon.possibilities__icon_6
+              p.possibilities__label Blacklist
+        .row
+          .col-md-10.col-md-offset-7
+            p.green-button.green-button_feature-block
+              a.green-button__link(href="#") Дивитися всi можливостi
+
+
+
+    section.feature-block.feature-block_application.feature-block_background-application
+      .container
+        .row
+          h2.application__title.col-md-24 Зверніться за консультацією
+        .row
+          p.application__description.col-md-10 Опишіть Ваші потреби, і
+            | ми запропонуємо Вам їх ідеальне вирішення!
+        .row
+          .col-md-10
+            a.big-button Залишити заявку
+
+  // ---------[FEATURES END]---------

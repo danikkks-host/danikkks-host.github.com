@@ -1,0 +1,15 @@
+extends _layouts/base
+
+include _modules/navbar-second/navbar-second
+include _modules/footer/footer
+include _modules/blog/blog
+
+block navbar
+  #[+navbar-second]
+
+block content
+  #[+blog]
+
+block footer
+  #[+footer]
+
